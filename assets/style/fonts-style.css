@@ -7,27 +7,35 @@
   --font-weight600: 600;
   --font-weight700: 700;
   --font-weight800: 800;
+  --font-size14: 1.4em;
+  --font-size16: 1.6em;
+  --font-size18: 1.8em;
+  --font-size20: 2em;
+  --font-size30: 3em;
+  --font-size40: 4em;
+  --font-size50: 5em;
+  --font-size96: 9.6em;
 }
 
 body {
   font-family: 'Inter', sans-serif;
   font-weight: var(--font-weight400);
-  font-size: 62,5%;
+  font-size: 62.5%;
 }
 
 /* header */
 .nav {
   color: var(--color-white);
-  font-size: 1.125em;
 }
 
 .item__link {
   font-weight: var(--font-weight500);
   line-height: 120%;
+  font-size: var(--font-size18);
 }
 
 .contacts-button {
-  font-size: .9em;
+  font-size: var(--font-size16);
   line-height: 120%;
   letter-spacing: 0.02em;
 }
@@ -37,7 +45,7 @@ body {
 .main-title {
   font-family: var(--dop-fonts);
   font-weight: var(--font-weight700);
-  font-size: 6em;
+  font-size: var(--font-size96);
   line-height: 110%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -55,7 +63,7 @@ body {
   font-family: var(--dop-fonts);
   font-style: normal;
   font-weight: var(--font-weight700);
-  font-size: 2.5em;
+  font-size: var(--font-size40);
   line-height: 130%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -63,11 +71,12 @@ body {
 
 .dc-group-title,
 .curses-title,
-.works-title {
+.works-title,
+.reviews-title {
   font-family: var(--dop-fonts);
   font-style: normal;
   font-weight: var(--font-weight700);
-  font-size: 3.125em;
+  font-size: var(--font-size50);;
   line-height: 120%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -75,45 +84,45 @@ body {
 
 .new-level-card-title {
   font-weight: var(--font-weight700);
-  font-size: 1.3em;
+  font-size: var(--font-size20);
   line-height: 120%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .new-level-card-text {
-  font-size: 1em;
+  font-size: var(--font-size16);
   line-height: 120%;
 }
 
 .dc-group-text {
-  font-size: 1em;
+  font-size: var(--font-size16);
   line-height: 120%;
 }
 
 .for-biginers-title {
   font-weight: var(--font-weight700);
-  font-size: 1em;
+  font-size: var(--font-size16);
   line-height: 120%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 
 .for-biginers-item {
-  font-size: 1em;
+  font-size: var(--font-size16);
   line-height: 120%;
 }
 
 .about-us-title {
   font-weight: var(--font-weight600);
-  font-size: 1.9em;
+  font-size: var(--font-size30);
   line-height: 120%;
   text-transform: uppercase;
 }
 
 .about-us-text {
   font-weight: 500;
-  font-size: 1.25em;
+  font-size: var(--font-size20);
   line-height: 120%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -121,28 +130,45 @@ body {
 
 .curses-info-title {
   font-weight: var(--font-weight600);
-  font-size: 2em;
+  font-size: var(--font-size30);
   line-height: 120%;
   text-transform: uppercase;
 }
 
 .curses-info-text {
-  font-size: 1em;
+  font-size: var(--font-size16);
   line-height: 120%;
 }
 
 .curses-button {
   font-weight: 500;
-  font-size: 1.25em;
+  font-size: var(--font-size20);
   line-height: 120%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
+.help-list {
+  font-size: var(--font-size18);
+  text-transform: uppercase;
+}
+
 .consult {
   font-weight: var(--font-weight500);
-  font-size: 1.25em;
+  font-size: var(--font-size20);
   line-height: 120%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.review-text-content {
+  font-weight: var(--font-weight500);
+  font-size: var(--font-size16);
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.student-name {
+  font-size: var(--font-size14);
 }
