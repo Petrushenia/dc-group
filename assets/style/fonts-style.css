@@ -2,6 +2,8 @@
   --main-fonts: 'Inter';
   --dop-fonts: 'Verdana';
   --color-white: #fff;
+  --color-grey: #acacac;
+  --main-bgcolor-element: #EB00FF;
   --font-weight400: 400;
   --font-weight500: 500;
   --font-weight600: 600;
@@ -21,6 +23,7 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: var(--font-weight400);
   font-size: 62.5%;
+  color: var(--color-white);
 }
 
 /* header */
@@ -72,7 +75,8 @@ body {
 .dc-group-title,
 .curses-title,
 .works-title,
-.reviews-title {
+.reviews-title,
+.questions-title {
   font-family: var(--dop-fonts);
   font-style: normal;
   font-weight: var(--font-weight700);
@@ -128,7 +132,8 @@ body {
   text-transform: uppercase;
 }
 
-.curses-info-title {
+.curses-info-title,
+.contact-title {
   font-weight: var(--font-weight600);
   font-size: var(--font-size30);
   line-height: 120%;
@@ -140,12 +145,14 @@ body {
   line-height: 120%;
 }
 
-.curses-button {
+.curses-button,
+.btn-submit {
   font-weight: 500;
   font-size: var(--font-size20);
   line-height: 120%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--color-white);
 }
 
 .help-list {
@@ -171,4 +178,74 @@ body {
 
 .student-name {
   font-size: var(--font-size14);
+}
+
+.all-reviews {
+  font-weight: var(--font-weight500);
+  font-size: var(--font-size20);
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.questions-hint {
+  font-size: var(--font-size16);
+  line-height: 120%;
+}
+
+.input {
+  font-size: var(--font-size16);
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.input::placeholder {
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-grey);
+}
+
+.privacy {
+  font-weight: 400;
+  font-size: var(--font-size14);
+  line-height: 120%;
+  letter-spacing: 0.02em;
+}
+
+.privacy-link {
+  color: var(--color-white);
+}
+
+.mail-link {
+  font-weight: var(--font-weight500);
+  font-size: var(--font-size20);
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.contact-link {
+  font-weight: var(--font-weight500);
+  font-size: var(--font-size14);
+  line-height: 110%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--main-bgcolor-element);
+}
+
+.subscribe-text {
+  font-size: var(--font-size14);
+  line-height: 120%;
+  letter-spacing: 0.02em;
+}
+
+.footer-container {
+  font-size: var(--font-size14);
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: var(--color-grey);
+  text-transform: uppercase;
 }

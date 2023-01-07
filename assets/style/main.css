@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 h1, h2, h3, h4, h5, p {
   margin: 0;
 }
@@ -138,10 +142,6 @@ nav {
 /* header end */
 
 /* main */
-.main {
-  color: var(--color-white);
-}
-
 .main-title {
   max-width: 1218px;
   padding-top: 50px;
@@ -170,6 +170,7 @@ nav {
 
 .title-button-text-arrow {
   margin-left: 12px;
+  cursor: pointer;
 }
 
 .main-title-button-text {
@@ -275,16 +276,23 @@ nav {
 }
 
 .about-us-title {
+  display: flex;
+  align-items: center;
   padding-bottom: 40px;
 }
 
-.about-us-text {
-  cursor: pointer;
-  transition: color .3s ease;
+.about-us-title::before,
+.about-us-title::after {
+  content: '';
+  display: inline-block;
+  background-image: url('./../image/png/star.png');
+  width: 60px;
+  height: 60px;
 }
 
-.about-us-text:hover {
-  color: var(--main-bgcolor-element);
+.about-us-text, .all-reviews {
+  cursor: pointer;
+  transition: color .3s ease;
 }
 
 .about-us > .separator-line {
@@ -298,10 +306,6 @@ nav {
 
 .about-us>.separator-line:last-child {
   margin-top: 30px;
-}
-
-.about-us-text:hover > path {
-  fill: var(--color-white);
 }
 
 .curses {
@@ -360,9 +364,14 @@ nav {
 }
 
 .help-list-item {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   border: 1px solid var(--main-bgcolor-element);
-  padding: 40px 30px;
+}
+
+.help-list-item-text {
+  padding: 0 30px;
 }
 
 .help-list-item:not(:last-child) {
@@ -371,18 +380,15 @@ nav {
 
 .help-list-item:nth-child(-n + 4):after {
   content: '0' counter(item);
-  display: inline-block;
-  position: absolute;
+  display: block;
   background-color: var(--main-bgcolor-element);
   counter-increment: item;
   padding: 40px 40px;
-  right: 0;
-  top: 0;
 }
 
 .works {
   display: grid;
-  grid-template: repeat(4, 100px)/minmax(320px, 540px) minmax(320px, 594px);
+  grid-template: repeat(4, 100px) / minmax(320px, 540px) minmax(320px, 594px);
   column-gap: 85px;
   row-gap: 20px;
 }
@@ -402,9 +408,11 @@ nav {
 
 .consult {
   display: flex;
-  align-items: flex-end;
+  align-items: last baseline;
   justify-content: flex-end;
   grid-area: 3/1/4/2;
+  cursor: pointer;
+  transition: color .3s ease;
 }
 
 .reviews {
@@ -412,6 +420,7 @@ nav {
   justify-content: space-between;
   flex-wrap: wrap;
   padding-top: 140px;
+  padding-bottom: 80px;
 }
 
 .reviews-title {
@@ -426,10 +435,22 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  left: 0;
   padding: 20px 30px;
   background-color: var(--bg-review-color);
   max-height: 129px;
   overflow-y: hidden;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.review-card:hover {
+  left: -10px;
+}
+
+.review-card:hover > .button-arrow-violet path {
+  fill: var(--color-white);
 }
 
 .student-name {
@@ -449,6 +470,146 @@ nav {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.all-reviews {
+  text-align: center;
+  padding-top: 35px;
+}
+
+.questions {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.qustions-title-block {
+  flex-basis: 360px;
+}
+
+.questions-form-block {
+  flex-basis: 594px;
+}
+
+.questions-title {
+  padding-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  border: none;
+  border-bottom: 1px solid var(--main-bgcolor-element);
+  background-color: transparent;
+  padding-bottom: 10px;
+  outline: none;
+}
+
+.form > .input {
+  margin-bottom: 30px;
+}
+
+.btn-submit {
+  width: 100%;
+  height: 58px;
+  margin-top: 35px;
+}
+
+.footer-contact {
+  display: flex;
+  gap: 30px;
+  padding: 80px 0 40px 0;
+}
+
+.contact {
+  width: 50%;
+  background-color: var(--main-bgcolor-element);
+  padding: 30px;
+}
+
+.contact-links {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 183px;
+  height: 39px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-white);
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color .3s ease;
+}
+
+.contact-link > .button-arrow-violet {
+  width: 10px;
+  height: 10px;
+}
+
+.mail-link {
+  display: inline-block;
+  position: relative;
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 10px 0 20px 0;
+}
+
+.mail-link::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  bottom: 15px;
+  height: 1px;
+  background-color: var(--color-white);
+  transition: width .3s ease;
+}
+
+.subscribe {
+  width: 50%;
+  background-color: var(--bg-review-color);
+  padding: 30px;
+}
+
+.subscribe-content {
+  display: flex;
+  padding-top: 35px;
+  gap: 50px;
+}
+
+.subscribe-text {
+  flex-basis: 231px;
+}
+
+.input-email {
+  position: relative;
+  flex-basis: 253px;
+}
+
+.input-email > .input {
+  width: 100%;
+}
+
+.input-email > .title-button-text-arrow {
+  position: absolute;
+  right: 0;
+}
+
+.footer > .separator-line {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 
@@ -472,4 +633,22 @@ nav {
 
 .hover-button:hover {
   background-color: transparent;
+}
+
+.about-us-text:hover,
+.all-reviews:hover,
+.consult:hover {
+  color: var(--main-bgcolor-element);
+}
+
+.contact-link:hover {
+  background-color: #313131;
+}
+
+.mail-link:hover::after {
+  width: 100%;
+}
+
+.input-email > .title-button-text-arrow:hover path {
+  fill: var(--main-bgcolor-element);
 }
