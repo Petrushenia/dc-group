@@ -24,8 +24,7 @@ img:not(.avatar) {
 }
 
 .wrapper {
-  background: var(--bgcolor) url('./../../../image/png/bg.png') no-repeat 0 calc(100% / 5423 + 2877px);
-  background-size: contain;
+  background: var(--bgcolor) url('./../../../image/png/bg.png') no-repeat 0 calc(100% / 5745.53 + 2845px);
 }
 
 .wrapper-shum {
