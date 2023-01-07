@@ -3,7 +3,6 @@
   --dop-fonts: 'Verdana';
   --color-white: #fff;
   --color-grey: #acacac;
-  --main-bgcolor-element: #EB00FF;
   --font-weight400: 400;
   --font-weight500: 500;
   --font-weight600: 600;
@@ -26,7 +25,7 @@ body {
   color: var(--color-white);
 }
 
-/* header */
+
 .nav {
   color: var(--color-white);
 }
@@ -42,8 +41,6 @@ body {
   line-height: 120%;
   letter-spacing: 0.02em;
 }
-/* header end */
-/* main */
 
 .main-title {
   font-family: var(--dop-fonts);
