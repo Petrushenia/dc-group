@@ -24,13 +24,21 @@ img:not(.avatar) {
 }
 
 .wrapper {
-  background: var(--bgcolor) no-repeat 0 calc(100% / 5423 + 3268px);
+  background: var(--bgcolor) url('./../../../image/png/bg.png') no-repeat 0 calc(100% / 5423 + 3268px);
   background-size: contain;
 }
 
+.wrapper-shum {
+  width: 100%;
+  height: 100%;
+  background-image: url('./../../../image/png/shum.png');
+}
+
 .container {
+  position: relative;
   max-width: 1218px;
   margin: auto;
+  z-index: 2;
 }
 
 .main-title {
