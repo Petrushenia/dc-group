@@ -1,0 +1,9 @@
+.footer > .separator-line {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
