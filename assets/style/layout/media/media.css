@@ -1,0 +1,53 @@
+@media screen and (max-width:1217px) {
+  body {
+      font-size: 58.5%;
+    }
+
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    font-size: 48%;
+  }
+  .word,
+  .main-title-button {
+    height: 54px;
+  }
+
+  .word {
+    width: calc(100% / 1218 * 308);
+  }
+
+  .main-title-icons {
+    max-width: 159px;
+  }
+
+  .questions {
+    justify-content: center;
+  }
+
+  .qustions-title-block {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .questions-hint {
+    display: block;
+    padding-bottom: 60px;
+  }
+
+  .dc-group-title {
+    grid-area: 1/1/2/3;
+  }
+
+  .dc-group-text {
+    grid-area: 2/1/3/3;
+  }
+
+  .input-email {
+    flex: 1 0 auto;
+  }
+}
