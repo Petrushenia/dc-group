@@ -143,12 +143,14 @@
     height: 40px;
   }
 
-  .reviews {
-    justify-content: center;
+  .works {
+    padding: 40px 0 0 0;
   }
 
   .reviews {
+    justify-content: center;
     padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .reviews-title {
