@@ -12,6 +12,7 @@
   body {
     font-size: 48%;
   }
+  
   .word,
   .main-title-button {
     height: 54px;
@@ -39,15 +40,123 @@
     padding-bottom: 60px;
   }
 
+  .e-commerce {
+    grid-template-columns: 320px minmax(320px, auto);
+    gap: 0 35px;
+    padding-top: 20px;
+  }
+  
+  .commerce {
+    grid-area: 3/1/5/1;
+  }
+
+  .about-us {
+    padding-top: 70px;
+  }
+
+  .curses {
+    padding-top: 90px;
+  }
+
+  .curses-title {
+    text-align: center;
+  }
+
   .dc-group-title {
+    text-align: center;
     grid-area: 1/1/2/3;
   }
 
   .dc-group-text {
+    max-width: 100%;
+    text-align: center;
     grid-area: 2/1/3/3;
+    padding: 12px 0 50px 0;
   }
 
   .input-email {
     flex: 1 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-title {
+    font-size: 7.3em;
+  }
+
+  .main-title-icons {
+    width: 102px;
+  }
+
+  .word {
+    width: (calc(100% / 1218 + 359));
+  }
+
+  .word,
+  .main-title-button {
+    height: 44px;
+  }
+
+  .new-level {
+    padding-top: 60px;
+  }
+
+  .new-level-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+  }
+
+  .new-level-card {
+    flex-basis: 260px;
+  }
+
+  .new-level-card:nth-child(1)::after,
+  .new-level-card:nth-child(2)::after {
+    left: 95px;
+  }
+
+  .new-level-card {
+    max-width: 100%;
+  }
+
+  .new-level {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .curses {
+    padding-top: 80px;
+  }
+
+  .curses-shop {
+    grid-gap: 25px;
+  }
+
+  .curses-shop-img-wrapper > img {
+    height: 100%;
+  }
+
+  .curses-button {
+    height: 40px;
+  }
+
+  .reviews {
+    justify-content: center;
+  }
+
+  .reviews {
+    padding-top: 20px;
+  }
+
+  .reviews-title {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .reviews-container {
+    padding-top: 40px;
   }
 }
