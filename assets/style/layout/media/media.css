@@ -12,6 +12,10 @@
   body {
     font-size: 48%;
   }
+
+  .main-title {
+    font-size: 8.9em;
+  }
   
   .word,
   .main-title-button {
@@ -26,6 +30,10 @@
     max-width: 159px;
   }
 
+  .main-title-icons > img {
+    max-width: 41%;
+  }
+
   .questions {
     justify-content: center;
   }
@@ -38,6 +46,15 @@
   .questions-hint {
     display: block;
     padding-bottom: 60px;
+  }
+
+  .works {
+    padding: 40px 0 20px 0;
+  }
+
+  .reviews {
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
 
   .e-commerce {
@@ -55,7 +72,7 @@
   }
 
   .curses {
-    padding-top: 90px;
+    padding-top: 80px;
   }
 
   .curses-title {
