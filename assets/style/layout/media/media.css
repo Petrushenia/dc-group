@@ -437,6 +437,10 @@
   .subscribe {
     width: 100%;
   }
+  
+  .contact-link {
+    width: 100%;
+  }
 
   .new-level-title,
   .dc-group-title,
