@@ -14,12 +14,13 @@
   }
 
   .main-title {
+    max-width: 900px;
     font-size: 8.9em;
   }
   
   .word,
   .main-title-button {
-    height: 54px;
+    height: 48px;
   }
 
   .word {
@@ -96,46 +97,172 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 910px) {
   .main-title {
-    font-size: 7.3em;
-  }
-
-  .main-title-icons {
-    width: 102px;
-  }
-
-  .word {
-    width: (calc(100% / 1218 + 359));
+    max-width: 700px;
+    font-size: 7em;
   }
 
   .word,
   .main-title-button {
-    height: 44px;
+    height: 39px;
+  }
+
+  .main-title-icons {
+    max-width: 125px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 47%;
+  }
+
+  .header {
+    justify-content: space-between;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  .nav {
+    position: absolute;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: flex-start;
+    top: 0;
+    left: -100%;
+    width: 70vw;
+    min-width: 320px;
+    height: 100vh;
+    padding: 100px 20px 20px 40px;
+    background-color: #000;
+    z-index: 3;
+    transition: left .3s ease;
+  }
+
+  .show-panel {
+    left: 0;
+  }
+
+  .nav-panel {
+    align-items: unset;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .nav-items {
+    list-style-type: disc;
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  .nav-items > li::marker {
+    color: var(--main-bgcolor-element);
+  }
+
+  .nav-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .nav-contacts {
+    padding-top: 100px;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .contacts-links {
+    display: flex;
+    width: 100%;
+    order: 2;
+  }
+
+  .social-network:last-child {
+    margin-right: 0;
+  }
+
+  .contacts-button {
+    order: 1;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 75px;
+    font-size: 3em;
+  }
+
+  .social-network {
+    width: 100%;
+    border-radius: 20px; 
+    border-color: var(--main-bgcolor-element);
+  }
+
+  .social-network-icon > path {
+    fill: var(--color-white);
+  }
+
+  .main-title {
+    font-size: 4.6em;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    max-width: 440px;
+  }
+
+  .main-title-icons {
+    width: 125px;
+  }
+
+  .word {
+    width: calc(100% / 1218 * 313);
+  }
+
+  .main-title-button {
+    width: calc(100% / 1218 * 348);
+  }
+
+  .main-title-button-text>.title-button-text-arrow {
+    width: 10px;
+    height: 10px;
+  }
+
+  .word,
+  .main-title-button {
+    height: 28px;
+  }
+
+  .main-title-icons {
+    width: 80px;
+  }
+
+  .separator-line {
+    margin: 30px auto;
   }
 
   .new-level {
-    padding-top: 60px;
+    padding-top: 20px;
   }
 
   .new-level-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 20px;
   }
 
   .new-level-card {
     flex-basis: 260px;
   }
 
-  .new-level-card:nth-child(1)::after,
-  .new-level-card:nth-child(2)::after {
+  .new-level-cards>.new-level-card::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 74px;
+    height: 2px;
+    background-color: var(--main-bgcolor-element);
+    bottom: -25px;
     left: 95px;
-  }
-
-  .new-level-card {
-    max-width: 100%;
   }
 
   .new-level {
@@ -144,12 +271,40 @@
     text-align: center;
   }
 
+  .e-commerce {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .commerce {
+    display: flex;
+    align-items: center;
+    order: 2;
+  }
+
+  .e-commerce>.for-biginners:first-of-type {
+    margin-top: 17px;
+    order: 3;
+  }
+
+  .e-commerce>.for-biginners:last-child {
+    order: 4;
+  }
+
   .curses {
     padding-top: 80px;
   }
 
   .curses-shop {
-    grid-gap: 25px;
+    display: block;
+  }
+
+  .curses-info {
+    padding-top: 20px;
+  }
+
+  .curses-button {
+    margin: auto;
   }
 
   .curses-shop-img-wrapper > img {
@@ -160,8 +315,88 @@
     height: 40px;
   }
 
+  .about-us-title::before,
+  .about-us-title::after {
+    display: none;
+  }
+
   .works {
+    display: block;
     padding: 40px 0 0 0;
+  }
+
+  .works-title .word {
+    width: 75px;
+    height: 17px;
+    border: 3px solid #EB00FF;
+  }
+
+  .works-title-color {
+    display: inline-block;
+  }
+
+  .help {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  .consult {
+    justify-content: center;
+  }
+
+  .help-list-item:nth-child(-n+4)::after {
+    padding: 30px 30px;
+  }
+
+  .reviews {
+    display: block;
+  }
+
+  .review-card {
+    padding: 10px;
+  }
+
+  .avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .review-text-wrapper {
+    max-width: 160px;
+  }
+
+  .review-card:hover {
+    left: 0;
+    top: -10px;
+  }
+
+  .questions {
+    padding-top: 20px;
+  }
+
+  .footer-contact {
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+
+  .contact,
+  .subscribe {
+    width: 100%;
+  }
+
+  .contact-link {
+    width: 100%;
+  }
+
+  .new-level-title,
+  .dc-group-title,
+  .about-us-title,
+  .curses-title,
+  .works-title,
+  .reviews-title,
+  .questions-title {
+    font-size: var(--font-size30);
+    text-align: center;
   }
 
   .reviews {
@@ -177,5 +412,43 @@
 
   .reviews-container {
     padding-top: 40px;
+  }
+}
+
+@media screen and (max-width:480px) {
+
+  body {
+    font-size: 7px;
+  }
+
+  .main-title {
+    font-size: 21px;
+  }
+  
+  .word,
+  .main-title-button {
+    height: 19px;
+  }
+
+  .main-title-button-text {
+    font-size: 10px;
+  }
+
+  .main-title-icons {
+    width: 60px;
+  }
+
+  .main-title-button-text > .title-button-text-arrow {
+    margin-left: 5px;
+  }
+
+  .new-level-title,
+  .dc-group-title,
+  .about-us-title,
+  .curses-title,
+  .works-title,
+  .reviews-title,
+  .questions-title {
+    font-size: 18px;
   }
 }
