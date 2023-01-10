@@ -117,6 +117,7 @@
   body {
     font-size: 47%;
   }
+
   .header {
     justify-content: space-between;
   }
@@ -202,98 +203,14 @@
   }
 
   .main-title {
-    font-size: 7.3em;
+    font-size: 4.6em;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    max-width: 440px;
   }
 
   .main-title-icons {
     width: 125px;
-  }
-
-  .word {
-    width: (calc(100% / 1218 + 359));
-  }
-
-  .word,
-  .main-title-button {
-    height: 44px;
-  }
-
-  .new-level {
-    padding-top: 60px;
-  }
-
-  .new-level-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 40px;
-  }
-
-  .new-level-card {
-    flex-basis: 260px;
-  }
-
-  .new-level-card:nth-child(1)::after,
-  .new-level-card:nth-child(2)::after {
-    left: 95px;
-  }
-
-  .new-level-card {
-    max-width: 100%;
-  }
-
-  .new-level {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .commerce {
-    display: flex;
-    align-items: center;
-  }
-
-  .curses {
-    padding-top: 80px;
-  }
-
-  .curses-shop {
-    grid-gap: 25px;
-  }
-
-  .curses-shop-img-wrapper > img {
-    height: 100%;
-  }
-
-  .curses-button {
-    height: 40px;
-  }
-
-  .works {
-    padding: 40px 0 0 0;
-  }
-
-  .reviews {
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .reviews-title {
-    flex-basis: 100%;
-    text-align: center;
-  }
-
-  .reviews-container {
-    padding-top: 40px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .main-title {
-    font-size: 4.6em;
-    padding-top: 40px;
-    padding-bottom: 10px;
   }
 
   .word {
@@ -304,7 +221,7 @@
     width: calc(100% / 1218 * 348);
   }
 
-  .main-title-button-text > .title-button-text-arrow {
+  .main-title-button-text>.title-button-text-arrow {
     width: 10px;
     height: 10px;
   }
@@ -327,10 +244,17 @@
   }
 
   .new-level-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding-top: 20px;
   }
 
-  .new-level-cards > .new-level-card:nth-child(3)::after {
+  .new-level-card {
+    flex-basis: 260px;
+  }
+
+  .new-level-cards>.new-level-card::after {
     content: '';
     position: absolute;
     display: block;
@@ -341,22 +265,34 @@
     left: 95px;
   }
 
+  .new-level {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
   .e-commerce {
     display: flex;
     flex-direction: column;
   }
 
   .commerce {
+    display: flex;
+    align-items: center;
     order: 2;
   }
 
-  .e-commerce > .for-biginners:first-of-type {
+  .e-commerce>.for-biginners:first-of-type {
     margin-top: 17px;
     order: 3;
   }
 
-  .e-commerce > .for-biginners:last-child {
+  .e-commerce>.for-biginners:last-child {
     order: 4;
+  }
+
+  .curses {
+    padding-top: 80px;
   }
 
   .curses-shop {
@@ -371,6 +307,14 @@
     margin: auto;
   }
 
+  .curses-shop-img-wrapper > img {
+    height: 100%;
+  }
+
+  .curses-button {
+    height: 40px;
+  }
+
   .about-us-title::before,
   .about-us-title::after {
     display: none;
@@ -378,6 +322,7 @@
 
   .works {
     display: block;
+    padding: 40px 0 0 0;
   }
 
   .works-title .word {
@@ -431,13 +376,14 @@
 
   .footer-contact {
     flex-wrap: wrap;
+    padding-top: 20px;
   }
 
   .contact,
   .subscribe {
     width: 100%;
   }
-  
+
   .contact-link {
     width: 100%;
   }
@@ -453,4 +399,56 @@
     text-align: center;
   }
 
+  .reviews {
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .reviews-title {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .reviews-container {
+    padding-top: 40px;
+  }
+}
+
+@media screen and (max-width:480px) {
+
+  body {
+    font-size: 7px;
+  }
+
+  .main-title {
+    font-size: 21px;
+  }
+  
+  .word,
+  .main-title-button {
+    height: 19px;
+  }
+
+  .main-title-button-text {
+    font-size: 10px;
+  }
+
+  .main-title-icons {
+    width: 60px;
+  }
+
+  .main-title-button-text > .title-button-text-arrow {
+    margin-left: 5px;
+  }
+
+  .new-level-title,
+  .dc-group-title,
+  .about-us-title,
+  .curses-title,
+  .works-title,
+  .reviews-title,
+  .questions-title {
+    font-size: 18px;
+  }
 }
