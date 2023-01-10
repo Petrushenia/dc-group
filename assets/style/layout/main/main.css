@@ -1,43 +1,6 @@
-:root {
-  --bgcolor: #181818;
-  --color-white: #fff;
-  --main-bgcolor-element: #EB00FF;
-  --neon-green: #6FF51D;
-  --color-separator: #4A4A4A;
-  --bg-review-color: #363636;
-}
-
-*, ::after, ::before {
-  box-sizing: border-box;
-}
-
-body {
-  scroll-behavior: smooth;
-}
-
-h1, h2, h3, h4, h5, p {
-  margin: 0;
-}
-
-img:not(.avatar) {
-  width: 100%;
-}
-
-.wrapper {
-  background: var(--bgcolor) url('./../../../image/png/bg.png') no-repeat 0 calc(100% / 5745.53 + 2845px);
-}
-
-.wrapper-shum {
-  width: 100%;
-  height: 100%;
-  background-image: url('./../../../image/png/shum.png');
-}
-
-.container {
-  position: relative;
-  max-width: 1218px;
-  margin: auto;
-  z-index: 2;
+.main-title-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .main-title {
@@ -342,6 +305,7 @@ img:not(.avatar) {
   justify-content: space-between;
   position: relative;
   left: 0;
+  top: 0;
   padding: 20px 30px;
   background-color: var(--bg-review-color);
   max-height: 129px;
@@ -508,6 +472,25 @@ img:not(.avatar) {
   position: absolute;
   right: 0;
 }
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  transition: width .3s ease, height .3s ease;
+}
+
+.show-modal {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bgcolor);
+  opacity: .7;
+  z-index: 1;
+}
+
+/* hover */
 
 .main-title-button:hover {
   background-color: transparent;
