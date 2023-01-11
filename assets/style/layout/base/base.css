@@ -51,3 +51,18 @@ img:not(.avatar) {
   max-width: 1218px;
   margin: auto;
 }
+
+.mouse-circle {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 0;
+  background-color: var(--main-bgcolor-element);
+  border-radius: 50%;
+  border: .5px solid #9747FF;
+  transition: top .09s linear, left .09 linear; 
+  transition: width .1s linear, height .1s linear;;
+  pointer-events: none;
+  z-index: 10;
+  opacity: .8;
+}
