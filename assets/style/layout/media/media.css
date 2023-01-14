@@ -245,10 +245,10 @@
   }
 
   .new-level-cards {
-    display: grid;
     grid-template-columns: repeat(2, minmax(200px, 1fr));
     justify-content: center;
     padding-top: 20px;
+    grid-gap: 30px 30px;
   }
 
   .new-level-cards > .new-level-card::after {
@@ -371,7 +371,6 @@
   }
 
   .footer-contact {
-    flex-wrap: wrap;
     padding-top: 20px;
   }
 
