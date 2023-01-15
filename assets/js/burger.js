@@ -18,7 +18,7 @@ class Burger {
   toggleNav = () => {
     this.showModal();
     this.navPanel.classList.toggle('show-panel');
-    this.body.classList.toggle('body-disscroll')
+    this.body.classList.toggle('body-disscroll');
   }
 
   createModal = () => {
@@ -37,13 +37,19 @@ class Burger {
   closeMenu = (e) => {
     const target = e.target;
     if (target == this.modal) {
-      this.toggleNav();
+      this.body.classList.remove('body-disscroll');
+      this.modal.classList.remove('show-modal');
+      this.navPanel.classList.remove('show-panel');
     }
   }
 
   addMethodClose = () => {
     for (let element of this.navElements) {
-      element.addEventListener('click', this.toggleNav)
+      element.addEventListener('click', () => {
+        this.body.classList.remove('body-disscroll');
+        this.modal.classList.remove('show-modal');
+        this.navPanel.classList.remove('show-panel');
+      })
     }
   }
 }
