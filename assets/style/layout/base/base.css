@@ -30,7 +30,7 @@ p {
   margin: 0;
 }
 
-img:not(.avatar) {
+.main img:not(.avatar) {
   width: 100%;
 }
 

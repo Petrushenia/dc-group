@@ -142,6 +142,10 @@
     transition: left .3s ease;
   }
 
+  .close-menu {
+    display: block;
+  }
+
   .show-panel {
     left: 0;
   }
