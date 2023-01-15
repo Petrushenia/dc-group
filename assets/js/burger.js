@@ -37,7 +37,6 @@ class Burger {
   closeMenu = (e) => {
     const target = e.target;
     if (target == this.modal) {
-      console.log(target)
       this.body.classList.remove('body-disscroll');
       this.modal.classList.remove('show-modal');
       this.navPanel.classList.remove('show-panel');
