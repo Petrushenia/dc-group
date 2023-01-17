@@ -1,5 +1,5 @@
 :root {
-  --main-fonts: 'Inter';
+  --main-fonts: 'Inter', sans-serif;
   --dop-fonts: 'Verdana';
   --color-white: #fff;
   --color-grey: #acacac;
