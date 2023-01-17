@@ -1,10 +1,12 @@
 :root {
   --bgcolor: #181818;
+  --bg-link-footer: #313131;
   --color-white: #fff;
   --main-bgcolor-element: #EB00FF;
   --neon-green: #6FF51D;
   --color-separator: #4A4A4A;
   --bg-review-color: #363636;
+  --bg-modal: #9F9F9F;
 }
 
 *,
@@ -17,7 +19,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.body-disscroll {
+.disscroll {
   overflow: hidden;
 }
 

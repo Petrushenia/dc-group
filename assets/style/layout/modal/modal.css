@@ -1,7 +1,12 @@
 .modal {
-  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   width: 0;
   height: 0;
   transition: width .3s ease, height .3s ease;
@@ -10,7 +15,7 @@
 .show-modal {
   width: 100%;
   height: 100%;
-  background-color: var(--bgcolor);
+  background-color: var(--bg-modal);
   opacity: .7;
   z-index: 1;
 }
