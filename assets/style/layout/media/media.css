@@ -114,6 +114,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
   body {
     font-size: 47%;
   }
@@ -248,25 +249,20 @@
   }
 
   .new-level-cards {
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
     justify-content: center;
     padding-top: 20px;
+    grid-gap: 30px 30px;
+  }
+
+  .new-level-cards > .new-level-card::after {
+    display: none;
   }
 
   .new-level-card {
-    flex-basis: 260px;
-  }
-
-  .new-level-cards>.new-level-card::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 74px;
-    height: 2px;
-    background-color: var(--main-bgcolor-element);
-    bottom: -25px;
-    left: 95px;
+    border: 1px solid var(--main-bgcolor-element);
+    padding: 15px;
+    max-width: 100%;
   }
 
   .new-level {
@@ -379,7 +375,6 @@
   }
 
   .footer-contact {
-    flex-wrap: wrap;
     padding-top: 20px;
   }
 
@@ -426,12 +421,12 @@
   }
 
   .main-title {
-    font-size: 21px;
+    font-size: 32px;
   }
   
   .word,
   .main-title-button {
-    height: 19px;
+    height: 25px;
   }
 
   .main-title-button-text {
@@ -444,6 +439,14 @@
 
   .main-title-button-text > .title-button-text-arrow {
     margin-left: 5px;
+  }
+
+  .new-level-cards {
+    grid-template-columns: minmax(200px, 1fr);
+  }
+
+  .contact-links {
+    grid-template-columns: repeat(auto-fit, minmax(186px, 100%));
   }
 
   .new-level-title,

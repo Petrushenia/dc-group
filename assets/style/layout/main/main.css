@@ -389,21 +389,26 @@
 }
 
 .footer-contact {
-  display: flex;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
   padding: 80px 0 40px 0;
 }
 
 .contact {
-  width: 50%;
   background-color: var(--main-bgcolor-element);
   padding: 30px;
 }
 
+.subscribe {
+  background-color: var(--bg-review-color);
+  padding: 30px;
+}
+
 .contact-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(186px, 186px));
+  grid-gap: 10px;
 }
 
 .contact-link {
@@ -441,12 +446,6 @@
   height: 1px;
   background-color: var(--color-white);
   transition: width .3s ease;
-}
-
-.subscribe {
-  width: 50%;
-  background-color: var(--bg-review-color);
-  padding: 30px;
 }
 
 .subscribe-content {
