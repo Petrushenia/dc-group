@@ -7,9 +7,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  width: 0;
+  width: 100%;
   height: 0;
-  transition: width .3s ease, height .3s ease;
 }
 
 .show-modal {
@@ -18,6 +17,48 @@
   background-color: var(--bg-modal);
   opacity: .7;
   z-index: 1;
+}
+
+.review-modal-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  z-index: -1;
+  transition: width .3s ease, height .3s ease;
+}
+
+.up-wrapper {
+  height: 100%;
+  z-index: 4;
+}
+
+.review-modal {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 790px;
+  height: 100%;
+  max-height: 90vh;
+  padding: 40px 56px 40px 40px;
+  background-color: var(--bg-color-review);
+  transition: 3s ease;
+}
+
+.review-modal > .avatar,
+.review-modal > .student-name {
+  grid-area: 1/1;
+}
+
+.review-modal > .review-text-content {
+  max-width: 100%;
+  white-space: wrap;
 }
 
 .close-menu {
