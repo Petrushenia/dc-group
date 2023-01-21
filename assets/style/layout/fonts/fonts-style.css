@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--main-fonts);
   font-weight: var(--font-weight400);
   font-size: 62.5%;
   color: var(--color-white);
@@ -75,7 +75,6 @@ body {
 .reviews-title,
 .questions-title {
   font-family: var(--dop-fonts);
-  font-style: normal;
   font-weight: var(--font-weight700);
   font-size: var(--font-size50);;
   line-height: 120%;
@@ -245,4 +244,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-grey);
   text-transform: uppercase;
+}
+
+.review-modal > .student-name,
+.review-modal-text-container > .review-text-content {
+  font-size: 16px;
 }

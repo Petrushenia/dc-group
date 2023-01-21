@@ -1,19 +1,26 @@
 class Review {
   constructor(root) {
     this.root = root;
-    this.body = document.body;
     this.modal = document.getElementById('modal');
     this.reviewWrapper = document.getElementById('review-modal-wrapper');
     this.reviewParent = document.querySelector('.review-modal');
     this.reviewCards = this.root.querySelectorAll('.review-card');
+    this.textContainer = document.getElementById('text-container');
+    this.closeButton = document.getElementById('close-menu');
     this.newReviewCard = null;
 
     this.reviewCards.forEach(card => card.addEventListener('click', this.openReview));
+
     this.reviewWrapper.addEventListener('click', (e) => {
       if (e.target == this.reviewWrapper) {
         this.toggleModal();
-        this.removeElement(this.reviewParent);
+        this.removeElement(this.textContainer);
       }
+    })
+
+    this.closeButton.addEventListener('click', () => {
+      this.toggleModal();
+      this.removeElement(this.textContainer);
     })
   }
 
@@ -29,21 +36,22 @@ class Review {
     const img = parent.querySelector('.avatar').cloneNode(true);
     const studentName = parent.querySelector('.student-name').cloneNode(true);
     const review = parent.querySelector('.review-text-content').cloneNode(true);
-    return [img, studentName, review]
+    this.addElements(this.textContainer, review)
+    return [img, studentName, this.textContainer];
   }
 
-  addElements = (parent, element) => {
-    if (Array.isArray(element)) {
-      element.forEach(el => parent.appendChild(el));
-    }else  {
-      parent.appendChild(element);
+  addElements = (parent, child) => {
+    if (Array.isArray(child)) {
+      child.forEach(element => parent.appendChild(element));
+    }else {
+      parent.appendChild(child);
     }
   }
 
   toggleModal = () => {
     this.modal.classList.toggle('show-modal');
     this.reviewWrapper.classList.toggle('up-wrapper')
-    this.body.classList.toggle('disscroll');
+    document.body.classList.toggle('disscroll');
   }
 
   removeElement = (element) => {
