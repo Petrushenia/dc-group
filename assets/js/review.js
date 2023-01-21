@@ -15,12 +15,14 @@ class Review {
       if (e.target == this.reviewWrapper) {
         this.toggleModal();
         this.removeElement(this.textContainer);
+        this.removeElement(this.reviewParent);
       }
     })
 
     this.closeButton.addEventListener('click', () => {
       this.toggleModal();
       this.removeElement(this.textContainer);
+      this.removeElement(this.reviewParent);
     })
   }
 
@@ -28,6 +30,7 @@ class Review {
     const reviewElements = this.getReviewElements(e);
     this.addElements(this.reviewParent, reviewElements);
     this.addElements(this.reviewWrapper, this.reviewParent);
+    this.addElements(this.reviewParent, this.closeButton)
     this.toggleModal();
   }
 
