@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px) {
+  .review-modal {
+    grid-template: repeat(2, auto) / 50px 1fr;
+    column-gap: 30px;
+    padding: 30px;
+  }
+
+  .review-modal-text-container::after {
+    left: -15px;
+  }
+
+  .review-modal > .student-name,
+  .review-modal-text-container > .review-text-content {
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .review-modal {
+    display: block;
+    padding: 20px;
+  }
+
+  .review-modal-text-container::after {
+    display: none;
+  }
+
+  .review-modal>.student-name {
+    padding-bottom: 20px;
+  }
+}
