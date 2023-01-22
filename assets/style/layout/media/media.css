@@ -352,6 +352,10 @@
     display: block;
   }
 
+  .review {
+    height: 250px;
+  }
+
   .review-card {
     padding: 10px;
   }

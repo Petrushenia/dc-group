@@ -292,6 +292,12 @@
   padding-bottom: 80px;
 }
 
+.review {
+  height: 430px;
+  overflow-y: hidden;
+  transition: all .3s ease;
+}
+
 .reviews-title {
   flex-basis: 0;
 }
@@ -312,15 +318,7 @@
   max-height: 129px;
   overflow-y: hidden;
   cursor: pointer;
-  transition: all .3s ease;
-}
-
-.review-card:hover {
-  left: -10px;
-}
-
-.review-card:hover > .button-arrow-violet path {
-  fill: var(--color-white);
+  transition: inherit;
 }
 
 .student-name {
@@ -345,6 +343,10 @@
 .all-reviews {
   text-align: center;
   padding-top: 35px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: var(--color-white);
 }
 
 .questions {
@@ -363,23 +365,6 @@
 
 .questions-title {
   padding-bottom: 20px;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-}
-
-.input {
-  border: none;
-  border-bottom: 1px solid var(--main-bgcolor-element);
-  background-color: transparent;
-  padding-bottom: 10px;
-  outline: none;
-}
-
-.form > .input {
-  margin-bottom: 30px;
 }
 
 .btn-submit {
@@ -459,49 +444,4 @@
   flex-basis: 231px;
 }
 
-.input-email {
-  position: relative;
-  flex-basis: 253px;
-}
-
-.input-email > .input {
-  width: 100%;
-}
-
-.input-email > .title-button-text-arrow {
-  position: absolute;
-  right: 0;
-}
-
 /* hover */
-
-.main-title-button:hover {
-  background-color: transparent;
-}
-
-.hover-button:hover {
-  background-color: transparent;
-}
-
-.about-us-text:hover,
-.all-reviews:hover,
-.consult:hover {
-  color: var(--main-bgcolor-element);
-}
-
-.contact-link:hover {
-  background-color: transparent;
-  color: var(--color-white);
-}
-
-.contact-link:hover > .title-button-text-arrow path{
-  fill: var(--color-white);
-}
-
-.mail-link:hover::after {
-  width: 100%;
-}
-
-.input-email > .title-button-text-arrow:hover path {
-  fill: var(--main-bgcolor-element);
-}
