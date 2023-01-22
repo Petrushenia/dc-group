@@ -1,0 +1,38 @@
+.main-title-button:hover {
+  background-color: transparent;
+}
+
+.hover-button:hover {
+  background-color: transparent;
+}
+
+.review-card:hover {
+  left: -10px;
+}
+
+.review-card:hover > .button-arrow-violet path {
+  fill: var(--color-white);
+}
+
+.about-us-text:hover,
+.all-reviews:hover,
+.consult:hover {
+  color: var(--main-bgcolor-element);
+}
+
+.contact-link:hover {
+  background-color: transparent;
+  color: var(--color-white);
+}
+
+.contact-link:hover > .title-button-text-arrow path {
+  fill: var(--color-white);
+}
+
+.mail-link:hover::after {
+  width: 100%;
+}
+
+.input-email > .title-button-text-arrow:hover path {
+  fill: var(--main-bgcolor-element);
+}

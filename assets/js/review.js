@@ -1,36 +1,34 @@
 class Review {
   constructor(root) {
     this.root = root;
-    this.modal = document.getElementById('modal');
-    this.reviewWrapper = document.getElementById('review-modal-wrapper');
-    this.reviewParent = document.querySelector('.review-modal');
     this.reviewCards = this.root.querySelectorAll('.review-card');
+    this.buttonOpenReviews = this.root.querySelector('.all-reviews');
+    this.reviewsBlock = this.root.querySelector('.review');
+    this.modal = document.getElementById('modal');
+    this.reviewModalWrapper = document.getElementById('review-modal-wrapper');
+    this.reviewParent = document.getElementById('review-modal');
     this.textContainer = document.getElementById('text-container');
-    this.closeButton = document.getElementById('close-menu');
+    this.closeModalButton = document.getElementById('close-menu');
     this.newReviewCard = null;
 
     this.reviewCards.forEach(card => card.addEventListener('click', this.openReview));
 
-    this.reviewWrapper.addEventListener('click', (e) => {
-      if (e.target == this.reviewWrapper) {
-        this.toggleModal();
-        this.removeElement(this.textContainer);
-        this.removeElement(this.reviewParent);
+    this.reviewModalWrapper.addEventListener('click', (e) => {
+      if (e.target == this.reviewModalWrapper) {
+        this.bindMethod();
       }
     })
 
-    this.closeButton.addEventListener('click', () => {
-      this.toggleModal();
-      this.removeElement(this.textContainer);
-      this.removeElement(this.reviewParent);
-    })
+    this.buttonOpenReviews.addEventListener('click', this.showAllReview)
+
+    this.closeModalButton.addEventListener('click', this.bindMethod)
   }
 
   openReview = (e) => {
     const reviewElements = this.getReviewElements(e);
     this.addElements(this.reviewParent, reviewElements);
-    this.addElements(this.reviewWrapper, this.reviewParent);
-    this.addElements(this.reviewParent, this.closeButton)
+    this.addElements(this.reviewModalWrapper, this.reviewParent);
+    this.addElements(this.reviewParent, this.closeModalButton)
     this.toggleModal();
   }
 
@@ -53,8 +51,21 @@ class Review {
 
   toggleModal = () => {
     this.modal.classList.toggle('show-modal');
-    this.reviewWrapper.classList.toggle('up-wrapper')
+    this.reviewModalWrapper.classList.toggle('up-wrapper')
     document.body.classList.toggle('disscroll');
+  }
+
+  bindMethod = () => {
+    this.toggleModal();
+    this.removeElement(this.textContainer);
+    this.removeElement(this.reviewParent);
+  }
+
+  showAllReview = () => {
+    const reviewHeight = this.reviewCards[0].offsetHeight;
+    const countReviewBlock = this.reviewCards.length;
+    console.log(reviewHeight, countReviewBlock)
+    this.reviewsBlock.style.height = `${(reviewHeight + 20) * countReviewBlock - 20}px`;
   }
 
   removeElement = (element) => {
@@ -62,4 +73,4 @@ class Review {
   }
 }
 
-const review = new Review(document.querySelector('.review'));
+const review = new Review(document.querySelector('.reviews-container'));

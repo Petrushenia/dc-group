@@ -55,3 +55,4 @@ class Burger {
 }
 
 const burger = new Burger(document.querySelector('.header'));
+
