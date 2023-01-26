@@ -9,32 +9,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-  body {
-    font-size: 48%;
-  }
-
-  .main-title {
-    max-width: 900px;
-    font-size: 8.9em;
-  }
-  
-  .word,
-  .main-title-button {
-    height: 48px;
-  }
-
-  .word {
-    width: calc(100% / 1218 * 308);
-  }
-
-  .main-title-icons {
-    max-width: 159px;
-  }
-
-  .main-title-icons > img {
-    max-width: 41%;
-  }
-
   .questions {
     justify-content: center;
   }
@@ -97,28 +71,7 @@
   }
 }
 
-@media screen and (max-width: 910px) {
-  .main-title {
-    max-width: 700px;
-    font-size: 7em;
-  }
-
-  .word,
-  .main-title-button {
-    height: 39px;
-  }
-
-  .main-title-icons {
-    max-width: 125px;
-  }
-}
-
 @media screen and (max-width: 768px) {
-
-  body {
-    font-size: 47%;
-  }
-
   .header {
     justify-content: space-between;
   }
@@ -133,7 +86,7 @@
     justify-content: normal;
     align-items: flex-start;
     top: 0;
-    left: -100%;
+    left: calc(-100% - 20px);
     width: 70vw;
     min-width: 320px;
     height: 100vh;
@@ -208,36 +161,13 @@
   }
 
   .main-title {
-    font-size: 4.6em;
     padding-top: 40px;
     padding-bottom: 10px;
-    max-width: 440px;
-  }
-
-  .main-title-icons {
-    width: 125px;
-  }
-
-  .word {
-    width: calc(100% / 1218 * 313);
-  }
-
-  .main-title-button {
-    width: calc(100% / 1218 * 348);
   }
 
   .main-title-button-text>.title-button-text-arrow {
     width: 10px;
     height: 10px;
-  }
-
-  .word,
-  .main-title-button {
-    height: 28px;
-  }
-
-  .main-title-icons {
-    width: 80px;
   }
 
   .separator-line {
@@ -365,13 +295,8 @@
     height: 50px;
   }
 
-  .review-text-wrapper {
-    max-width: 160px;
-  }
-
   .review-card:hover {
     left: 0;
-    top: -10px;
   }
 
   .questions {
@@ -418,27 +343,29 @@
   }
 }
 
+@media screen and (max-width: 716px) {
+  .word,
+  .main-title-button {
+    width: 23%;
+  }
+}
+
+@media screen and (max-width: 497px) {
+  .main-title {
+    font-size: clamp(21px, 6.1vw, var(--font-size96));;
+  }
+}
+
 @media screen and (max-width:480px) {
 
   body {
     font-size: 7px;
   }
-
-  .main-title {
-    font-size: 32px;
-  }
   
-  .word,
-  .main-title-button {
-    height: 25px;
-  }
+
 
   .main-title-button-text {
     font-size: 10px;
-  }
-
-  .main-title-icons {
-    width: 60px;
   }
 
   .main-title-button-text > .title-button-text-arrow {
@@ -447,6 +374,10 @@
 
   .new-level-cards {
     grid-template-columns: minmax(200px, 1fr);
+  }
+
+  .review-text-wrapper {
+    max-width: 140px;
   }
 
   .contact-links {
