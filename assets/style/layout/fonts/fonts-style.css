@@ -120,12 +120,17 @@ body {
   text-transform: uppercase;
 }
 
+.about-us-button,
 .about-us-text {
   font-weight: 500;
   font-size: var(--font-size20);
   line-height: 120%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.about-us-text {
+  text-transform: unset;
 }
 
 .curses-info-title,

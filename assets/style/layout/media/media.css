@@ -352,7 +352,7 @@
 
 @media screen and (max-width: 497px) {
   .main-title {
-    font-size: clamp(21px, 6.1vw, var(--font-size96));;
+    font-size: clamp(21px, 6.5vw, var(--font-size96));;
   }
 }
 
@@ -362,8 +362,6 @@
     font-size: 7px;
   }
   
-
-
   .main-title-button-text {
     font-size: 10px;
   }
@@ -372,12 +370,12 @@
     margin-left: 5px;
   }
 
-  .new-level-cards {
-    grid-template-columns: minmax(200px, 1fr);
+  .curses {
+    text-align: center;
   }
 
-  .review-text-wrapper {
-    max-width: 140px;
+  .new-level-cards {
+    grid-template-columns: minmax(200px, 1fr);
   }
 
   .contact-links {

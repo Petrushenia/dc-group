@@ -36,7 +36,7 @@
   fill: var(--color-white);
 }
 
-.about-us-text:hover,
+.about-us-button:hover,
 .show-reviews-button:hover,
 .consult:hover {
   color: var(--main-bgcolor-element);

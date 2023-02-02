@@ -1,8 +1,3 @@
-.main-title-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
 .main-title {
   padding-top: 50px;
 }
@@ -352,7 +347,7 @@
 }
 
 .review-text-wrapper {
-  max-width: 380px;
+  width: min(45vw, 379px);
 }
 
 .review-text-content {
@@ -375,10 +370,28 @@
   transform: rotate(-90deg);
 }
 
-.about-us-text,
+.about-us-button,
 .all-reviews {
   cursor: pointer;
   transition: color .3s ease;
+}
+
+.about-us-text {
+  padding-top: 20px;
+  height: 0;
+  overflow-y: hidden;
+}
+
+.about-us-text-targets {
+  list-style: none;
+}
+
+.show-text {
+  height: 100%;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .questions {
