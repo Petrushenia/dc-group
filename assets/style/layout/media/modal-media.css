@@ -5,6 +5,14 @@
     padding: 30px;
   }
 
+  .review-modal::after {
+    width: 1px;
+    height: calc(100% - 60px);
+    background-color: var(--color-separator);
+    top: 30px;
+    left: 95px;
+  }
+
   .review-modal-text-container::after {
     left: -15px;
   }
@@ -22,11 +30,15 @@
     padding: 20px;
   }
 
+  .review-modal::after {
+    display: none;
+  }
+
   .review-modal-text-container::after {
     display: none;
   }
 
   .review-modal>.student-name {
-    padding-bottom: 20px;
+    padding: 10px 0;
   }
 }

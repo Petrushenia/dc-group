@@ -11,7 +11,7 @@
   height: 0;
 }
 
-.show-modal {
+.open-modal {
   width: 100%;
   height: 100%;
   background-color: var(--bg-modal);
@@ -78,15 +78,15 @@
   overflow-y: auto;
 }
 
-.review-modal-text-container::after {
+.review-modal::after {
   content: '';
   display: block;
   position: absolute;
   width: 1px;
-  height: 100%;
+  height: calc(100% - 80px);
   background-color: var(--color-separator);
-  top: 0;
-  left: -40px;
+  top: 40px;
+  left: 180px;
 }
 
 .review-modal-text-container > .review-text-content::-webkit-scrollbar {

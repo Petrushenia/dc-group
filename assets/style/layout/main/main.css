@@ -331,7 +331,6 @@
   max-height: 129px;
   overflow-y: hidden;
   cursor: pointer;
-  transition: inherit;
 }
 
 .student-name {
@@ -382,8 +381,33 @@
   overflow-y: hidden;
 }
 
+.targets-item {
+  margin-bottom: 10px;
+}
+
+.targets-item::marker {
+  color: var(--main-bgcolor-element)
+}
+
 .about-us-text-targets {
-  list-style: none;
+  text-align: left;
+}
+
+.targets-item-title {
+  margin-top: 20px;
+}
+
+.targets-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.dc-group-color {
+  color: var(--main-bgcolor-element)
+}
+
+.show-text {
+  height: 100%;
 }
 
 .show-text {
@@ -391,7 +415,10 @@
 }
 
 .underline {
+  display: block;
   text-decoration: underline;
+  text-transform: uppercase;
+  padding-top: 10px;
 }
 
 .questions {

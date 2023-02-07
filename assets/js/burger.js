@@ -1,58 +1,54 @@
+import { mainModal } from "./main.modal.js";
+
 class Burger {
   constructor(root) {
     this.root = root;
+    this.modal = mainModal;
     this.body = document.body;
     this.burger = this.root.querySelector('.burger-menu');
     this.navPanel = this.root.querySelector('.nav');
     this.navElements = this.navPanel.children;
-    this.modal = document.getElementById('modal');
 
-    this.burger.addEventListener('click', () => {
-      this.openMenu();
-    })
-
-    this.modal.addEventListener('click', this.closeMenu);
-
-    this.addMethod();
+    this.initBurger();
   }
 
   openMenu = () => {
-    this.toggleModal();
+    this.modal.toggleModal();
     this.body.classList.add('disscroll');
-    this.navPanel.classList.add('show-panel');
+    this.navPanel.classList.add('open-panel');
   }
 
-  toggleModal = () => {
-    this.modal.classList.toggle('show-modal');
+  closeMenuByModal = () => {
+    this.modal.modal.addEventListener('click', this.closeMenu)
   }
 
-  createModal = () => {
-    this.modal = document.createElement('div');
-    this.modal.classList.add('modal');
-    this.modal.addEventListener('click', this.closeMenu)
-    this.addElement(this.body, this.modal);
-  }
-
-  addElement = (parent, element) => {
-    parent.appendChild(element);
+  openModalByClick = () => {
+    this.burger.addEventListener('click', () => {
+      this.openMenu();
+    })
   }
 
   closeMenu = () => {
-    this.modal.classList.remove('show-modal');
+    this.modal.modal.classList.remove('open-modal')
     this.body.classList.remove('disscroll');
-    this.navPanel.classList.remove('show-panel');
+    this.navPanel.classList.remove('open-panel');
   }
 
-  addMethod = () => {
-    if (window.matchMedia('(max-width: 768px)').matches) {
-        for (let element of this.navElements) {
-          element.addEventListener('click', () => {
-          this.closeMenu();
-        })
-      }
+  closeMenuByItem = () => {
+    for (let element of this.navElements) {
+        element.addEventListener('click', () => {
+        this.closeMenu();
+      })
     }
+  }
+
+  initBurger = () => {
+    if (window.matchMedia('(max-width: 768px)').matches) {
+      this.closeMenuByItem();
+      this.closeMenuByModal();
+      this.openModalByClick();
+    }  
   }
 }
 
 const burger = new Burger(document.querySelector('.header'));
-
