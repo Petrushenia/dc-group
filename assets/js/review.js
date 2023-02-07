@@ -1,35 +1,40 @@
+import { mainModal } from "./main.modal.js";
+
 class Review {
   constructor(root) {
     this.root = root;
     this.reviewCards = this.root.querySelectorAll('.review-card');
-    this.buttonOpenReviews = this.root.querySelector('.show-reviews-button');
+    this.openReviewsButton = this.root.querySelector('.show-reviews-button');
     this.reviewsBlock = this.root.querySelector('.review');
-    this.modal = document.getElementById('modal');
+    this.modal = mainModal;
     this.reviewModalWrapper = document.getElementById('review-modal-wrapper');
-    this.reviewParent = document.getElementById('review-modal');
-    this.textContainer = document.getElementById('text-container');
-    this.closeModalButton = document.getElementById('close-menu');
-    this.newReviewCard = null;
+    this.reviewParent = document.querySelector('#review-modal');
+    this.textContainer = document.querySelector('#text-container');
+    this.closeReviewButton = document.getElementById('close-menu');
+    this.newReviewCards= null;
 
     this.reviewCards.forEach(card => card.addEventListener('click', this.openReview));
 
     this.reviewModalWrapper.addEventListener('click', (e) => {
       if (e.target == this.reviewModalWrapper) {
-        this.bindMethod();
+        this.closeReview();
       }
     })
 
-    this.buttonOpenReviews.addEventListener('click', this.showAllReviews)
-
-    this.closeModalButton.addEventListener('click', this.bindMethod)
+    this.openReviewsButton.addEventListener('click', this.showAllReviews);
+    
+    this.closeReviewButton.addEventListener('click', () => {
+      this.toggleReview();
+      this.closeReview();
+    })
   }
 
   openReview = (e) => {
     const reviewElements = this.getReviewElements(e);
     this.addElements(this.reviewParent, reviewElements);
     this.addElements(this.reviewModalWrapper, this.reviewParent);
-    this.addElements(this.reviewParent, this.closeModalButton)
-    this.toggleModal();
+    this.addElements(this.reviewParent, this.closeReviewButton)
+    this.toggleReview();
   }
 
   getReviewElements = (e) => {
@@ -49,16 +54,14 @@ class Review {
     }
   }
 
-  toggleModal = () => {
-    this.modal.classList.toggle('show-modal');
+  toggleReview = () => {
+    this.modal.toggleModal();
     this.reviewModalWrapper.classList.toggle('up-wrapper')
     document.body.classList.toggle('disscroll');
   }
 
-  bindMethod = () => {
-    this.toggleModal();
-    this.removeElement(this.textContainer);
-    this.removeElement(this.reviewParent);
+  closeReview = () => {
+    [this.textContainer, this.reviewParent].forEach(element => this.removeElement(element));
   }
 
   showAllReviews = () => {

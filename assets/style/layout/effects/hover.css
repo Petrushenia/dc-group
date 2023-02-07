@@ -28,10 +28,6 @@
   background-color: transparent;
 }
 
-.review-card:hover {
-  left: -10px;
-}
-
 .review-card:hover > .button-arrow-violet path {
   fill: var(--color-white);
 }

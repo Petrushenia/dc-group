@@ -45,7 +45,7 @@ body {
 .main-title {
   font-family: var(--dop-fonts);
   font-weight: var(--font-weight700);
-  font-size: clamp(21px, 7.1vw, var(--font-size96));
+  font-size: var(--font-size96);
   line-height: 110%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -131,6 +131,17 @@ body {
 
 .about-us-text {
   text-transform: unset;
+}
+
+.underline {
+  font-weight: bold;
+}
+
+.targets-item-title {
+  font-family: var(--dop-fonts);
+  font-size: 1em;
+  line-height: 120%;
+  text-transform: uppercase;
 }
 
 .curses-info-title,

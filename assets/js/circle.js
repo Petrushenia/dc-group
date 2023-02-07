@@ -7,12 +7,11 @@ class MouseCircle {
     this.mousePosX;
 
     if (window.matchMedia('(min-width: 900px)').matches) {
-      this.init();
+      this.initCircle();
     }
-    
   }
 
-  move = (e) => {
+  moveCircle = (e) => {
     this.circle.style.top = `${this.getPageY(e) - (this.circle.offsetWidth / 2)}px`;
     this.circle.style.left = `${this.getPageX(e) - (this.circle.offsetWidth / 2)}px`;
   }
@@ -27,7 +26,7 @@ class MouseCircle {
     return e.pageX;
   }
 
-  savePos = () => {
+  setPosition = () => {
     this.circle.style.top = `${(pageYOffset + this.mousePosY) - (this.circle.offsetWidth / 2)}px`
   }
 
@@ -41,33 +40,29 @@ class MouseCircle {
     this.circle.style.height = '12px';
   }
 
-  addListenerOver = () => {
+  enlargeCircle = () => {
     this.circleLower.forEach(element => {
       element.addEventListener('mouseover', this.getLower)
     })
   }
 
-  addListenerOut = () => {
+  shrinkCrcle = () => {
     this.circleLower.forEach(element => {
       element.addEventListener('mouseout', this.getBigger)
     })
   }
 
-  init = () => {
+  initCircle = () => {
     this.circle.className = 'mouse-circle';
     this.body.appendChild(this.circle);
     this.body.addEventListener('mousemove', (e) => {
-      this.move(e);
+      this.moveCircle(e);
     })
-
-    window.addEventListener('scroll', () => {
-      this.savePos()
-    })
-
-    this.addListenerOver()
-    this.addListenerOut()
+    window.addEventListener('scroll', this.setPosition)
+    this.shrinkCrcle();
+    this.enlargeCircle();
+    
   }
 }
-
 
 const mouseCircle = new MouseCircle();
