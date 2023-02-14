@@ -1,47 +1,3 @@
-:root {
-  --main-fonts: 'Inter', sans-serif;
-  --dop-fonts: 'Verdana';
-  --color-white: #fff;
-  --color-grey: #acacac;
-  --font-weight400: 400;
-  --font-weight500: 500;
-  --font-weight600: 600;
-  --font-weight700: 700;
-  --font-weight800: 800;
-  --font-size14: 1.4em;
-  --font-size16: 1.6em;
-  --font-size18: 1.8em;
-  --font-size20: 2em;
-  --font-size30: 3em;
-  --font-size40: 4em;
-  --font-size50: 5em;
-  --font-size96: 9.6em;
-}
-
-body {
-  font-family: var(--main-fonts);
-  font-weight: var(--font-weight400);
-  font-size: 62.5%;
-  color: var(--color-white);
-}
-
-
-.nav {
-  color: var(--color-white);
-}
-
-.item__link {
-  font-weight: var(--font-weight500);
-  line-height: 120%;
-  font-size: var(--font-size18);
-}
-
-.contacts-button {
-  font-size: var(--font-size16);
-  line-height: 120%;
-  letter-spacing: 0.02em;
-}
-
 .main-title {
   font-family: var(--dop-fonts);
   font-weight: var(--font-weight700);
@@ -76,7 +32,8 @@ body {
 .questions-title {
   font-family: var(--dop-fonts);
   font-weight: var(--font-weight700);
-  font-size: var(--font-size50);;
+  font-size: var(--font-size50);
+  ;
   line-height: 120%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -252,17 +209,4 @@ body {
   font-size: var(--font-size14);
   line-height: 120%;
   letter-spacing: 0.02em;
-}
-
-.footer-container {
-  font-size: var(--font-size14);
-  line-height: 120%;
-  letter-spacing: 0.02em;
-  color: var(--color-grey);
-  text-transform: uppercase;
-}
-
-.review-modal > .student-name,
-.review-modal-text-container > .review-text-content {
-  font-size: 16px;
 }

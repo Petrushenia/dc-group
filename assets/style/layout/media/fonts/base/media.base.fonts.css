@@ -1,0 +1,21 @@
+@media screen and (max-width:1217px) {
+  body {
+    font-size: 58.5%;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .main-title {
+    font-size: clamp(21px, 7.1vw, var(--font-size96));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 7px;
+  }
+}

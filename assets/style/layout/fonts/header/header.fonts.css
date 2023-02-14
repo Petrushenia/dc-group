@@ -1,0 +1,15 @@
+.nav {
+  color: var(--color-white);
+}
+
+.item__link {
+  font-weight: var(--font-weight500);
+  line-height: 120%;
+  font-size: var(--font-size18);
+}
+
+.contacts-button {
+  font-size: var(--font-size16);
+  line-height: 120%;
+  letter-spacing: 0.02em;
+}
