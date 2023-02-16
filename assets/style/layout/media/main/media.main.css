@@ -96,6 +96,12 @@
     max-width: 100%;
   }
 
+  .button-arrow-white,
+  .button-arrow-violet {
+    width: 13px;
+    height: 12px;
+  }
+
   .new-level {
     display: flex;
     flex-direction: column;
@@ -134,6 +140,10 @@
     padding-top: 20px;
   }
 
+  .curses-info-text {
+    padding-bottom: 20px;
+  }
+
   .curses-button {
     margin: auto;
   }
@@ -154,6 +164,11 @@
   .works {
     display: block;
     padding: 40px 0 0 0;
+  }
+
+  .word {
+    height: 17px;
+    border: 2px solid #EB00FF;
   }
 
   .works-title-color {
@@ -215,13 +230,8 @@
   .main-title-button {
     width: 100%;
     padding: 0 10px;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 50px;
-  }
-
-  .main-title-button > .button-arrow-white {
-    width: 11px;
-    height: 11px;
   }
 
   .main-title-text {
@@ -234,6 +244,10 @@
 
   .curses {
     text-align: center;
+  }
+
+  .word {
+    width: 60px;
   }
 
   .new-level-cards {
