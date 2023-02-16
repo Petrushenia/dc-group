@@ -247,7 +247,13 @@
   }
 
   .word {
+    height: 14px;
     width: 60px;
+  }
+
+  .show-reviews-button {
+    margin: auto;
+    display: block;
   }
 
   .new-level-cards {
