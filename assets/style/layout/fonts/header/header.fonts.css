@@ -2,7 +2,7 @@
   color: var(--color-white);
 }
 
-.item__link {
+.item-link {
   font-weight: var(--font-weight500);
   line-height: 120%;
   font-size: var(--font-size18);

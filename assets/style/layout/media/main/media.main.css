@@ -63,15 +63,12 @@
 
 @media screen and (max-width: 768px) {
   .main-title {
-    text-align: center;
     padding-top: 40px;
     padding-bottom: 10px;
   }
 
-  .main-title-button-text>.title-button-text-arrow {
-    margin-left: 5px;
-    width: 10px;
-    height: 10px;
+  .big-word {
+    bottom: 70px;
   }
 
   .separator-line {
@@ -159,12 +156,6 @@
     padding: 40px 0 0 0;
   }
 
-  .works-title .word {
-    width: 75px;
-    height: 17px;
-    border: 3px solid #EB00FF;
-  }
-
   .works-title-color {
     display: inline-block;
   }
@@ -216,21 +207,29 @@
   }
 }
 
-@media screen and (max-width: 716px) {
-  .word,
-  .main-title-button {
-    width: 23%;
+@media screen and (max-width: 490px) {
+  .main-title-wrapper {
+    background-image: none;
   }
-}
 
-@media screen and (max-width: 480px) {
+  .main-title-button {
+    width: 100%;
+    padding: 0 10px;
+    justify-content: space-evenly;
+    height: 50px;
+  }
+
+  .main-title-button > .button-arrow-white {
+    width: 11px;
+    height: 11px;
+  }
+
+  .main-title-text {
+    padding: 25px 0;
+  }
   .logo-img {
     width: 45px;
     height: 35px;
-  }
-
-  .main-title-button-text>.title-button-text-arrow {
-    margin-left: 5px;
   }
 
   .curses {

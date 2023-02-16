@@ -1,18 +1,42 @@
 .main-title {
   font-family: var(--dop-fonts);
   font-weight: var(--font-weight700);
-  font-size: var(--font-size96);
+  font-size: var(--font-size-main-title);
   line-height: 110%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
+.main-title-text {
+  font-weight: 700;
+  font-size: var(--font-size40);
+  line-height: 110%;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
 .main-title-button {
-  font-family: var(--main-fonts);
+  font-size: 2.4em;
   font-weight: var(--font-weight600);
-  font-size: .25em;
   line-height: 120%;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.big-word {
+  font-family: inherit;
+  font-weight: var(--font-weight700);
+  font-size: 269px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px var(--main-bgcolor-element);
+}
+
+.big-word-layer {
+  -webkit-text-fill-color: rgba(235, 0, 255, 0.1);
+  -webkit-text-stroke: initial;
 }
 
 .new-level-title {

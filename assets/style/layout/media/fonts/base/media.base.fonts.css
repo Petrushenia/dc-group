@@ -8,14 +8,8 @@
   }
 }
 
-@media screen and (max-width: 1220px) {
-  .main-title {
-    font-size: clamp(21px, 7.1vw, var(--font-size96));
-  }
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   body {
-    font-size: 7px;
+    font-size: 46.5%;
   }
 }

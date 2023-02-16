@@ -48,7 +48,7 @@
     align-items: unset;
   }
 
-  .nav-items>li::marker {
+  .nav-items > li::marker {
     color: var(--main-bgcolor-element);
   }
 
@@ -62,6 +62,10 @@
     flex-direction: column;
     width: 100%;
     justify-content: space-between;
+  }
+
+  .item-link::after {
+    display: none;
   }
 
   .contacts-links {
