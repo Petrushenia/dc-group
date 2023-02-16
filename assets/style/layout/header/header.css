@@ -44,12 +44,12 @@ nav {
   width: 100%;
 }
 
-.item__link {
+.item-link {
   text-decoration: none;
   color: inherit;
 }
 
-.nav-item::after {
+.item-link::after {
   content: '';
   position: relative;
   display: block;

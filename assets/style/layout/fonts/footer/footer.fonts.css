@@ -1,0 +1,12 @@
+.footer-container {
+  font-size: var(--font-size14);
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: var(--color-grey);
+  text-transform: uppercase;
+}
+
+.review-modal>.student-name,
+.review-modal-text-container>.review-text-content {
+  font-size: 16px;
+}

@@ -1,0 +1,24 @@
+@media screen and (max-width: 768px) {
+  .footer-contact {
+    padding-top: 20px;
+  }
+
+  .contact,
+  .subscribe {
+    width: 100%;
+  }
+
+  .contact-link {
+    width: 100%;
+  }
+
+  .new-level-title,
+  .dc-group-title,
+  .about-us-title,
+  .curses-title,
+  .works-title,
+  .reviews-title,
+  .questions-title {
+    text-align: center;
+  }
+}

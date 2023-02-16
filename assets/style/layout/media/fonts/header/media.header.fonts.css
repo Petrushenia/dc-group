@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {
+  .nav-panel {
+    font-size: 20px;
+  }
+  
+  .contacts-button {
+    font-size: 3em;
+  }
+}

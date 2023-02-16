@@ -1,4 +1,4 @@
-.nav-item:hover::after {
+.item-link:hover::after {
   width: 100%;
 }
 

@@ -1,0 +1,48 @@
+@media screen and (max-width: 1220px) {
+  .main-title {
+    font-size: var(--font-size-main-title);
+    font-size: clamp(21px, 7.1vw, var(--font-size-main-title));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-title {
+    font-size: calc(24px + 40 * (100vw / 1218));
+  }
+
+  .contacts-button {
+    font-size: 3em;
+  }
+
+  .new-level-title,
+  .dc-group-title,
+  .about-us-title,
+  .curses-title,
+  .works-title,
+  .reviews-title,
+  .questions-title {
+    font-size: var(--font-size30);
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .main-title-button {
+    font-size: 13px;
+  }
+
+  .main-title-text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .new-level-title,
+  .dc-group-title,
+  .about-us-title,
+  .curses-title,
+  .works-title,
+  .reviews-title,
+  .questions-title {
+    font-size: 18px;
+  }
+}

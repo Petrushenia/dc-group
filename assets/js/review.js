@@ -17,6 +17,7 @@ class Review {
 
     this.reviewModalWrapper.addEventListener('click', (e) => {
       if (e.target == this.reviewModalWrapper) {
+        this.toggleReview();
         this.closeReview();
       }
     })

@@ -1,0 +1,26 @@
+:root {
+  --main-fonts: 'Inter', sans-serif;
+  --dop-fonts: 'Verdana', sans-serif;
+  --color-white: #fff;
+  --color-grey: #acacac;
+  --font-weight400: 400;
+  --font-weight500: 500;
+  --font-weight600: 600;
+  --font-weight700: 700;
+  --font-weight800: 800;
+  --font-size14: 1.4em;
+  --font-size16: 1.6em;
+  --font-size18: 1.8em;
+  --font-size20: 2em;
+  --font-size30: 3em;
+  --font-size40: 4em;
+  --font-size50: 5em;
+  --font-size-main-title: 8.3em;
+}
+
+body {
+  font-family: var(--main-fonts);
+  font-weight: var(--font-weight400);
+  font-size: 62.5%;
+  color: var(--color-white);
+}
