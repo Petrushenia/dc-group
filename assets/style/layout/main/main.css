@@ -215,7 +215,6 @@
   height: 58px;
   background-color: var(--main-bgcolor-element);
   color: var(--color-white);
-  gap: 12px;
   grid-area: 1/2;
   margin-top: auto;
 }
@@ -479,6 +478,11 @@
   border-radius: 20px;
   text-decoration: none;
   transition: background-color .3s ease;
+}
+
+.button-arrow-violet,
+.button-arrow-white {
+  margin-left: 5px;
 }
 
 .contact-link > .button-arrow-violet {
