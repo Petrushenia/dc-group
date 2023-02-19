@@ -1,0 +1,31 @@
+.new-level {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.new-level-cards {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  grid-gap: 50px 30px;
+}
+
+.new-level-card {
+  position: relative;
+  max-width: 260px;
+}
+
+.new-level-card:nth-child(1):after,
+.new-level-card:nth-child(2):after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 74px;
+  height: 2px;
+  background-color: var(--main-bgcolor-element);
+  bottom: -25px;
+}
+
+.new-level-card-title {
+  padding-bottom: 10px;
+}

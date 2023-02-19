@@ -1,0 +1,55 @@
+.main-title-wrapper {
+  position: relative;
+  background-image: url('./../../../image/png/dc.png');
+  background-position: 100% 130%;
+  background-repeat: no-repeat;
+}
+
+.main-title {
+  padding-top: 50px;
+}
+
+.main-title-text {
+  padding: 70px 0;
+  position: relative;
+  max-width: 710px;
+  z-index: 1;
+}
+
+.main-title-button {
+  max-width: 480px;
+  height: 70px;
+  outline: none;
+  border: none;
+  border: 1px solid var(--main-bgcolor-element);
+  border-radius: 50px;
+  background-color: var(--main-bgcolor-element);
+  color: var(--color-white);
+  transition: .3s ease-in;
+  padding: 0 40px;
+}
+
+.big-word {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: rotate(-20deg);
+}
+
+.big-word-layer {
+  position: absolute;
+  top: 0;
+  transform: rotate(20deg);
+}
+
+.light-green {
+  color: var(--neon-green)
+}
+
+.purple {
+  color: var(--main-bgcolor-element)
+}
+
+.title-button-text-arrow {
+  width: min(16px, 10%);
+}
