@@ -1,0 +1,83 @@
+.reviews {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 140px;
+  padding-bottom: 80px;
+}
+
+.review {
+  height: 430px;
+  overflow-y: hidden;
+}
+
+.open-reviews {
+  height: 100% !important;
+}
+
+.reviews-title {
+  flex-basis: 0;
+  padding-bottom: 30px;
+}
+
+.reviews-container {
+  flex-basis: 594px;
+  margin: auto;
+}
+
+.review-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  left: 0;
+  top: 0;
+  padding: 20px 30px;
+  background-color: var(--bg-review-color);
+  max-height: 129px;
+  overflow-y: hidden;
+  cursor: pointer;
+}
+
+.student-name {
+  padding-top: 10px;
+}
+
+.review-card:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.avatar {
+  border-radius: 50%
+}
+
+.review-text-wrapper {
+  width: min(45vw, 379px);
+}
+
+.review-text-content {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.show-reviews-button {
+  text-align: center;
+  padding-top: 35px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.close > .title-button-text-arrow {
+  transform: rotate(-90deg);
+}
+
+.about-us-button,
+.all-reviews {
+  cursor: pointer;
+  transition: color .3s ease;
+}

@@ -1,0 +1,23 @@
+.questions {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.qustions-title-block {
+  flex-basis: 360px;
+}
+
+.questions-form-block {
+  flex-basis: 594px;
+}
+
+.questions-title {
+  padding-bottom: 20px;
+}
+
+.btn-submit {
+  width: 100%;
+  height: 58px;
+  margin-top: 35px;
+}

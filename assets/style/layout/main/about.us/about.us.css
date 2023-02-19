@@ -1,0 +1,75 @@
+.about-us {
+  padding-top: 140px;
+  text-align: center;
+}
+
+.about-us-title {
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.about-us-title::before,
+.about-us-title::after {
+  content: '';
+  display: inline-block;
+  background-image: url('./../../../image/png/star.png');
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.about-us > .separator-line {
+  margin: 0;
+}
+
+.about-us > .separator-line:first-child {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.about-us > .separator-line:last-child {
+  margin-top: 30px;
+}
+
+.about-us-text {
+  padding-top: 20px;
+  height: 0;
+  overflow-y: hidden;
+}
+
+.targets-item {
+  margin-bottom: 10px;
+}
+
+.targets-item::marker {
+  color: var(--main-bgcolor-element)
+}
+
+.about-us-text-targets {
+  text-align: left;
+}
+
+.targets-item-title {
+  margin-top: 20px;
+}
+
+.targets-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.dc-group-color {
+  color: var(--main-bgcolor-element)
+}
+
+.show-text {
+  height: 100%;
+}
+
+.underline {
+  display: block;
+  text-decoration: underline;
+  text-transform: uppercase;
+  padding-top: 10px;
+}

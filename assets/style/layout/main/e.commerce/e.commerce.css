@@ -1,0 +1,48 @@
+.e-commerce {
+  display: grid;
+  grid-template-columns: minmax(554px, auto) minmax(320px, 594px);
+  grid-template-rows: repeat(4, minmax(57px, auto));
+  gap: 0 70px;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.commerce {
+  grid-area: 1/1/5/2;
+}
+
+.dc-group-title {
+  grid-area: 1/2/2/2
+}
+
+.dc-group-title-color {
+  color: var(--main-bgcolor-element);
+}
+
+.dc-group-text {
+  padding: 12px 0 25px 0;
+  max-width: 460px;
+  grid-area: 2/2/3/2;
+}
+
+.for-biginners {
+  border: 1px solid #4A4A4A;
+  padding: 30px;
+}
+
+.for-biginners:first-of-type {
+  margin-bottom: 17px;
+}
+
+.for-biginers-list {
+  padding-left: 15px;
+  list-style: disc;
+}
+
+.for-biginers-item {
+  padding-top: 10px;
+}
+
+.for-biginers-title {
+  color: var(--main-bgcolor-element);
+}

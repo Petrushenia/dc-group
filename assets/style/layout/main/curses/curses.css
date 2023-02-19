@@ -1,0 +1,39 @@
+.curses {
+  padding-top: 140px;
+}
+
+.curses-wrapper > .separator-line {
+  margin: 40px 0 40px 0;
+}
+
+.curses > .separator-line:last-child {
+  margin: 40px 0 0 0;
+}
+
+.curses-shop {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 554px));
+  grid-gap: 70px;
+}
+
+.curses-wrapper {
+  padding-top: 50px;
+}
+
+.curses-info {
+  grid-area: 1/2;
+}
+
+.curses-info-text {
+  max-width: 588px;
+  padding: 20px 0 60px 0;
+}
+
+.curses-button {
+  width: min(280px, 100%);
+  height: 58px;
+  background-color: var(--main-bgcolor-element);
+  color: var(--color-white);
+  grid-area: 1/2;
+  margin-top: auto;
+}
