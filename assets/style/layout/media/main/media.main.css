@@ -13,7 +13,7 @@
     padding-bottom: 60px;
   }
 
-  .works {
+  .work {
     padding: 40px 0 20px 0;
   }
 
@@ -161,7 +161,7 @@
     display: none;
   }
 
-  .works {
+  .work {
     display: block;
     padding: 40px 0 0 0;
   }
@@ -171,7 +171,7 @@
     border: 2px solid #EB00FF;
   }
 
-  .works-title-color {
+  .work-title-color {
     display: inline-block;
   }
 
