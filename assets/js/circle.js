@@ -48,13 +48,15 @@ class MouseCircle {
   }
 
   getBiggerCircle = () => {
+    this.circle.width = 26;
     this.circle.div.style.width = `${this.circle.width}px`;
     this.circle.div.style.height =`${this.circle.width}px`;
   }
 
   getLowerCircle = () => {
-    this.circle.div.style.width = `${this.circle.width / 2}px`;
-    this.circle.div.style.height = `${this.circle.width / 2}px`;
+    this.circle.width = this.circle.width / 2;
+    this.circle.div.style.width = `${this.circle.width}px`;
+    this.circle.div.style.height = `${this.circle.width}px`;
   }
 
   enlargeCircle = () => {
