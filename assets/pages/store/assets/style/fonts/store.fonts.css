@@ -1,3 +1,37 @@
 .main-title-store {
   font-size: var(--font-size50);
 }
+
+.curse-direction-title {
+  font-size: var(--font-size30);
+  font-weight: var(--font-weight600);
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.curse-direction-text {
+  font-size: var(--font-size18);
+  line-height: 120%;
+}
+
+.curse-main-title {
+  font-family: 'Verdana';
+  font-weight: var(--font-weight700);
+  font-size: 50px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-bgcolor-element);
+}
+
+.curse-info-title {
+  font-weight: 600;
+  font-size: var(--font-size30);
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.curse-info-list {
+  font-size: var(--font-size16);
+  line-height: 120%;
+}
