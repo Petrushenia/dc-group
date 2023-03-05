@@ -35,3 +35,67 @@
   font-size: var(--font-size16);
   line-height: 120%;
 }
+
+.benefits-card-title {
+  font-weight: var(--font-weight500);
+    font-size: var(--font-size16);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.card-title-number {
+  font-weight: var(--font-weight600);
+    font-size: var(--font-size30);
+    line-height: 120%;
+    text-transform: uppercase;
+    color: var(--main-bgcolor-element);
+}
+
+.card-text {
+  font-size: var(--font-size16);
+  line-height: 120%;
+  color: #ACACAC;
+}
+
+.benefits-title {
+  font-family: 'Verdana';
+  font-weight: var(--font-weight700);
+  font-size: var(--font-size50);
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-bottom: 50px;
+}
+
+.questions-title.store {
+  font-weight: var(--font-weight600);
+  font-size: var(--font-size30);
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.questions-hint.price {
+  font-weight: var(--font-weight500);
+  font-size: var(--font-size16);
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ACACAC;
+}
+
+.button-choose {
+  font-size: var(--font-size16);
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.price {
+  font-family: 'Verdana';
+  font-weight: var(--font-weight700);
+  font-size: var(--font-size40);
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-bgcolor-element);
+}
