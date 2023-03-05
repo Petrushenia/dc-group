@@ -1,11 +1,14 @@
 @import url('./../../../../style/layout/base/normalize.css');
 @import url('./../../../../style/layout/base/base.css');
 @import url('./../../../../style/layout/fonts/fonts.css');
-@import url('./fonts/store.fonts.css');
 @import url('./../../../../style/layout/header/header.css');
-@import url('./main/store.main.css');
+@import url('./../../../../style/layout/main/questions/questions.css');
 @import url('./../../../../style/layout/form/form.css');
 @import url('./../../../../style/layout/footer/footer.css');
 @import url('./../../../../style/layout/modal/modal.css');
 @import url('./../../../../style/layout/modal/review.css');
 @import url('./../../../../style/layout/effects/hover.css');
+@import url('./fonts/store.fonts.css');
+@import url('./main/store.main.css');
+@import url('./media/store.media.css');
+@import url('./animation/animation.css');

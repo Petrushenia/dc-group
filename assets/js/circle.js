@@ -1,8 +1,14 @@
 class MouseCircle {
   constructor() {
-    this.circle = document.createElement('div');
     this.body = document.body;
+    this.circle = {
+      width: '26',
+      div: document.createElement('div')
+    };
+
     this.circleLower = document.querySelectorAll('.lower');
+    this.pageWidth = document.documentElement.scrollWidth;
+    this.pageHeight = document.documentElement.scrollHeight;
     this.mousePosY;
     this.mousePosX;
 
@@ -12,8 +18,8 @@ class MouseCircle {
   }
 
   moveCircle = (e) => {
-    this.circle.style.top = `${this.getPageY(e) - (this.circle.offsetWidth / 2)}px`;
-    this.circle.style.left = `${this.getPageX(e) - (this.circle.offsetWidth / 2)}px`;
+    this.circle.div.style.top = `${this.getPageY(e) - (this.circle.width / 2)}px`;
+    this.circle.div.style.left = `${this.getPageX(e) - (this.circle.width / 2)}px`;
   }
 
   getPageY = (e) => {
@@ -26,42 +32,61 @@ class MouseCircle {
     return e.pageX;
   }
 
-  setPosition = () => {
-    this.circle.style.top = `${(pageYOffset + this.mousePosY) - (this.circle.offsetWidth / 2)}px`
+  setPositionByScroll = () => {
+    this.circle.div.style.top = `${(pageYOffset + this.mousePosY) - (this.circle.width / 2)}px`
   }
 
-  getBigger = () => {
-    this.circle.style.width = '26px';
-    this.circle.style.height = '26px';
+  checkPosition = (e) => {
+    if (this.mousePosX < this.circle.width) {
+      this.circle.div.style.left = '0px';
+    }else if (this.mousePosX > (this.pageWidth - this.circle.width)) {
+      this.circle.div.style.left = `${this.pageWidth - this.circle.width}px`
+    }else if (e.pageY > (this.pageHeight - this.circle.width)) {
+      console.log('lol')
+      this.circle.div.style.top = `${this.pageHeight - this.circle.width}px`
+    }
   }
 
-  getLower = () => {
-    this.circle.style.width = '12px';
-    this.circle.style.height = '12px';
+  getBiggerCircle = () => {
+    this.circle.width = 26;
+    this.circle.div.style.width = `${this.circle.width}px`;
+    this.circle.div.style.height =`${this.circle.width}px`;
+  }
+
+  getLowerCircle = () => {
+    this.circle.width = this.circle.width / 2;
+    this.circle.div.style.width = `${this.circle.width}px`;
+    this.circle.div.style.height = `${this.circle.width}px`;
   }
 
   enlargeCircle = () => {
     this.circleLower.forEach(element => {
-      element.addEventListener('mouseover', this.getLower)
+      element.addEventListener('mouseover', this.getLowerCircle)
     })
   }
 
-  shrinkCrcle = () => {
+  shrinkCircle = () => {
     this.circleLower.forEach(element => {
-      element.addEventListener('mouseout', this.getBigger)
+      element.addEventListener('mouseout', this.getBiggerCircle)
     })
+  }
+
+  createCircle = () => {
+    this.circle.div.className = 'mouse-circle';
+    this.circle.div.style.width = `${this.circle.width}px`;
+    this.circle.div.style.height = `${this.circle.width}px`;
   }
 
   initCircle = () => {
-    this.circle.className = 'mouse-circle';
-    this.body.appendChild(this.circle);
+    this.createCircle();
+    this.body.appendChild(this.circle.div);
     this.body.addEventListener('mousemove', (e) => {
       this.moveCircle(e);
+      this.checkPosition(e);
     })
-    window.addEventListener('scroll', this.setPosition)
-    this.shrinkCrcle();
+    window.addEventListener('scroll', this.setPositionByScroll)
+    this.shrinkCircle();
     this.enlargeCircle();
-    
   }
 }
 

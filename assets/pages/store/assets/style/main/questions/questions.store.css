@@ -1,0 +1,30 @@
+.questions.store {
+  padding: 60px 70px;
+  background-color: var(--bg-review-color)
+}
+
+.qustions-title-block.store {
+  flex-basis: 440px;
+}
+
+.questions-title.store {
+  padding: 0;
+}
+
+.questions-hint.price {
+  display: block;
+  padding: 20px 0 10px 0;
+}
+
+.buttons-choose {
+  display: flex;
+}
+
+.button-choose {
+  padding: 10px 20px;
+  color: var(--color-white)
+}
+
+.button-choose:first-child {
+  margin-right: 20px;
+}

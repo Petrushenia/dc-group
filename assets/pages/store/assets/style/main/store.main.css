@@ -1,2 +1,7 @@
+@import url('./main.title/main.store.title.css');
+@import url('./direction/direction.css');
+@import url('./curse/curse.css');
+@import url('./benefits/benefits.css');
+@import url('./questions/questions.store.css');
 @import url('./../../../../../style/layout/main/work/work.css');
-@import url('./../../../../../style/layout/main/footer.contact/footer.contact.css')
+@import url('./../../../../../style/layout/main/footer.contact/footer.contact.css');

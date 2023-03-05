@@ -1,0 +1,14 @@
+.curse-direction {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 130px;
+}
+
+.curse-direction-title {
+  max-width: 440px;
+}
+
+.curse-direction-text {
+  max-width: 594px;
+}

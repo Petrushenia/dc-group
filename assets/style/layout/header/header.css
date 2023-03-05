@@ -45,17 +45,18 @@ nav {
 }
 
 .item-link {
+  position: relative;
   text-decoration: none;
   color: inherit;
 }
 
 .item-link::after {
   content: '';
-  position: relative;
-  display: block;
+  position: absolute;
   height: 2px;
   width: 0;
-  top: 5px;
+  bottom: -10px;
+  left: 0;
   background-color: var(--main-bgcolor-element);
   transition: width .5s ease;
 }
