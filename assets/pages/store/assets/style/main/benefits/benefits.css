@@ -4,9 +4,9 @@
 
 .benefits-cards {
   display: grid;
-  grid-template-columns: repeat(3, calc(100% / 1218 * 386));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   justify-content: space-between;
-  grid-gap: 45px 0px;
+  grid-gap: 45px 30px;
   
 }
 
@@ -17,13 +17,19 @@
   border: 1px solid var(--bg-review-color)
 }
 
-.rectangles {
+.benefit-card:first-child {
+  border: none;
+}
+
+.rectangles-wrapper {
+  width: 100%;
   position: relative;
 }
 
 .rect-one {
   width: 115px;
   height: 115px;
+  left: 16%;
   background-color: #79357E;
   z-index: 3;
   animation: change-color-one 3s infinite ;
@@ -32,27 +38,26 @@
 .rect-two {
   width: 119px;
   height: 119px;
+  left: 33%;
   background-color: #6F1577;
   z-index: 2;
-  left: 100px;
   animation: change-color-two 3s infinite
 }
 
 .rect-three {
-  width: 131px;
-  height: 131px;
+  width: 123px;
+  height: 123px;
   background-color: #451649;
   z-index: 1;
-  left: 170px;
+  left: 50%;
   animation: change-color-three 3s infinite ;
 }
 
 .rect {
-  display: inline-block;
-  position: absolute;
+  display: block;
   clip-path: polygon(100% 50%, 0 0, 0 100%);
+  position: absolute;
 }
-
 
 .benefits-card-title {
   display: flex;

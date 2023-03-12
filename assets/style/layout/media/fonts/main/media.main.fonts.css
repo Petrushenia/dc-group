@@ -7,7 +7,7 @@
 
 @media screen and (max-width: 768px) {
   .main-title {
-    font-size: calc(24px + 40 * (100vw / 1218));
+    font-size: calc(var(--font-size20) + 40 * (100vw / 1218));
   }
 
   .contacts-button {

@@ -1,10 +1,6 @@
-.curse-elips {
-  display: inline-block;
-  width: 95px;
+.word.store{
   height: 10vw;
   max-height: 38px;
-  border: 8px solid var(--main-bgcolor-element);
-  border-radius: 50px;
 }
 
 .curse-store {
@@ -22,6 +18,9 @@
 }
 
 .curse-info-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-bottom: 30px;
 }
 

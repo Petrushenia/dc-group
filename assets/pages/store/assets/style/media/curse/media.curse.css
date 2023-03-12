@@ -1,0 +1,24 @@
+@media screen and (max-width: 768px) {
+  .curse-info {
+    grid-template: 113px repeat(2, auto) / 1fr;
+    gap: 20px;
+  }
+
+  .curse-info > * {
+    padding: 20px;
+  }
+
+  .grid-item-one, 
+  .grid-item-two,
+  .grid-item-three {
+    grid-area: unset;
+  }
+
+  .grid-item-one {
+    width: 100%;
+  }
+
+  .grid-item-two {
+    border-right: 1px solid var(--main-bgcolor-element);
+  }
+}
