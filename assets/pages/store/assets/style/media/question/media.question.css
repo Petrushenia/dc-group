@@ -1,0 +1,21 @@
+@media screen and (max-width: 768px) {
+  .buttons-choose {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .buttons-choose > .contacts-button {
+    margin-bottom: 0;
+    height: 50px;
+  }
+
+  .button-choose {
+    font-size: var(--font-size16);
+  }
+
+  .button-choose:first-child {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

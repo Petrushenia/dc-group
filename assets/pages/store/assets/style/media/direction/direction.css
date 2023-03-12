@@ -1,0 +1,12 @@
+@media screen and (max-width: 1217px) {
+
+  .curse-direction {
+    padding-bottom: 0;
+  }
+
+  .curse-direction-title {
+    max-width: 100%;
+    padding-bottom: 40px;
+  }
+
+}
