@@ -1,9 +1,9 @@
-.main-title-wrapper-store {
+.main-title-wrapper-pages {
   position: relative;
   margin: 100px 0;
 }
 
-.main-title-store {
+.main-title-pages {
   position: relative;
   z-index: 1;
 }

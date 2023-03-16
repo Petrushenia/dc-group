@@ -1,4 +1,8 @@
 @media screen and (max-width: 768px) {
+  .questions.pages {
+    padding: 60px 30px;
+  }
+
   .buttons-choose {
     align-items: center;
     justify-content: center;
