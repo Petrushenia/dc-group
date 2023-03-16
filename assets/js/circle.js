@@ -42,7 +42,6 @@ class MouseCircle {
     }else if (this.mousePosX > (this.pageWidth - this.circle.width)) {
       this.circle.div.style.left = `${this.pageWidth - this.circle.width}px`
     }else if (e.pageY > (this.pageHeight - this.circle.width)) {
-      console.log('lol')
       this.circle.div.style.top = `${this.pageHeight - this.circle.width}px`
     }
   }

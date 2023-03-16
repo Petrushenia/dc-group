@@ -1,13 +1,13 @@
-.questions.store {
+.questions.pages {
   padding: 60px 70px;
   background-color: var(--bg-review-color)
 }
 
-.qustions-title-block.store {
+.qustions-title-block.pages {
   flex-basis: 440px;
 }
 
-.questions-title.store {
+.questions-title.pages {
   padding: 0;
 }
 
