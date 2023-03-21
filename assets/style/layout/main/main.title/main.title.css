@@ -29,17 +29,19 @@
   padding: 0 40px;
 }
 
+.dc-words {
+  position: absolute;
+  top: 217px;
+  left: calc(100% - 385px)
+}
+
 .big-word {
   position: absolute;
-  right: 0;
-  bottom: 0;
   transform: rotate(-20deg);
 }
 
 .big-word-layer {
   position: absolute;
-  top: 0;
-  transform: rotate(20deg);
 }
 
 .light-green {
