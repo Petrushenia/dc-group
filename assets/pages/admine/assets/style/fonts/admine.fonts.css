@@ -1,0 +1,5 @@
+.directions-item {
+  font-size: var(--font-size16);
+  line-height: 120%;
+  letter-spacing: 0.02em;
+}

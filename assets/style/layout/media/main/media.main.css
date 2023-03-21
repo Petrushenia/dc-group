@@ -67,9 +67,16 @@
     padding-bottom: 10px;
   }
 
-  .big-word {
-    bottom: 70px;
+  .dc-words {
+    top: 194px;
+    left: calc(100% - 287px);
   }
+
+  .big-word,
+  .big-word-layer {
+    font-size: 190px;
+  }
+
 
   .separator-line {
     margin: 30px auto;
@@ -225,6 +232,10 @@
 @media screen and (max-width: 490px) {
   .main-title-wrapper {
     background-image: none;
+  }
+
+  .dc-words {
+    display: none;
   }
 
   .main-title-button {

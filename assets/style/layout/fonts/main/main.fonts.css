@@ -23,7 +23,8 @@
   text-transform: uppercase;
 }
 
-.big-word {
+.big-word,
+.big-word-layer {
   font-family: inherit;
   font-weight: var(--font-weight700);
   font-size: 269px;
@@ -57,7 +58,6 @@
   font-family: var(--dop-fonts);
   font-weight: var(--font-weight700);
   font-size: var(--font-size50);
-  ;
   line-height: 120%;
   letter-spacing: 0.03em;
   text-transform: uppercase;

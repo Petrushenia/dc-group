@@ -1,4 +1,4 @@
-.main-title-store {
+.main-title-page {
   font-size: var(--font-size50);
 }
 
@@ -67,7 +67,7 @@
   padding-bottom: 50px;
 }
 
-.questions-title.store {
+.questions-title.pages {
   font-weight: var(--font-weight600);
   font-size: var(--font-size30);
   line-height: 120%;

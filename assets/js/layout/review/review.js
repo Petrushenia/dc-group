@@ -1,4 +1,4 @@
-import { mainModal } from "./main.modal.js";
+import { mainModal } from "../mainModal/main.modal.js";
 
 class Review {
   constructor(root) {
@@ -75,4 +75,4 @@ class Review {
   }
 }
 
-const review = new Review(document.querySelector('.reviews-container'));
+export const review = new Review(document.querySelector('.reviews-container'));

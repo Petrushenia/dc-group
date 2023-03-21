@@ -1,4 +1,4 @@
-import { mainModal } from "./main.modal.js";
+import { mainModal } from "../mainModal/main.modal.js";
 
 class Burger {
   constructor(root) {
@@ -51,4 +51,4 @@ class Burger {
   }
 }
 
-const burger = new Burger(document.querySelector('.header'));
+export const burger = new Burger(document.querySelector('.header'));
