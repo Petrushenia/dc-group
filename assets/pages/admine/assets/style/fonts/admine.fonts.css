@@ -3,3 +3,21 @@
   line-height: 120%;
   letter-spacing: 0.02em;
 }
+
+.curse-main-text {
+  font-size: var(--font-size18);
+  line-height: 120%;
+  letter-spacing: 0.02em;
+}
+
+.case-titel {
+  font-weight: 600;
+  font-size: var(--font-size30);
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.case-text {
+  font-size: var(--font-size16);
+  line-height: 120%;
+}

@@ -1,0 +1,18 @@
+.learn-cases {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(317px, 1fr));
+}
+
+.case {
+  padding: 0 50px 0 50px;
+}
+
+.case:nth-child(2n - 1) {
+  border-right: 1px solid var(--main-bgcolor-element);
+  border-left: 1px solid var(--main-bgcolor-element);
+}
+
+.curse-main-text {
+  max-width: 550px;
+  padding: 20px 0 40px 0;
+}
