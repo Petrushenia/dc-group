@@ -12,6 +12,10 @@
   border-left: 1px solid var(--main-bgcolor-element);
 }
 
+.case-titel{
+  padding-bottom: 20px;
+}
+
 .curse-main-text {
   max-width: 550px;
   padding: 20px 0 40px 0;
