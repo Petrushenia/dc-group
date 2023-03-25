@@ -1,6 +1,7 @@
 .learn-cases {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(317px, 1fr));
+  padding-bottom: 70px;
 }
 
 .case {
@@ -19,4 +20,15 @@
 .curse-main-text {
   max-width: 550px;
   padding: 20px 0 40px 0;
+}
+
+.dop-market {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.dop-market-text {
+  max-width: 593px;
 }

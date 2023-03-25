@@ -21,3 +21,10 @@
   font-size: var(--font-size16);
   line-height: 120%;
 }
+
+.dop-market-text {
+  font-weight: 600;
+  font-size: var(--font-size30);
+  line-height: 120%;
+  text-transform: uppercase;
+}
