@@ -3,15 +3,17 @@ import { mainModal } from "../mainModal/main.modal.js";
 class Review {
   constructor(root) {
     this.root = root;
-    this.reviewCards = this.root.querySelectorAll('.review-card');
     this.openReviewsButton = this.root.querySelector('.show-reviews-button');
     this.reviewsBlock = this.root.querySelector('.review');
-    this.modal = mainModal;
-    this.reviewModalWrapper = document.getElementById('review-modal-wrapper');
-    this.reviewParent = document.querySelector('#review-modal');
-    this.textContainer = document.querySelector('#text-container');
-    this.closeReviewButton = document.getElementById('close-menu');
+    this.reviewCards = this.root.querySelectorAll('.review-card');
+
+    this.reviewModalWrapper = this.root.querySelector('#review-modal-wrapper');
+    this.reviewModal = this.reviewModalWrapper.querySelector('#review-modal');
+    this.textContainer = this.reviewModal.querySelector('#text-container');
+    this.closeReviewButton = this.reviewModal.querySelector('#close-menu');
     this.newReviewCards= null;
+
+    Object.setPrototypeOf(this, mainModal);
 
     this.reviewCards.forEach(card => card.addEventListener('click', this.openReview));
 
@@ -28,13 +30,14 @@ class Review {
       this.toggleReview();
       this.closeReview();
     })
+    
   }
 
   openReview = (e) => {
     const reviewElements = this.getReviewElements(e);
-    this.addElements(this.reviewParent, reviewElements);
-    this.addElements(this.reviewModalWrapper, this.reviewParent);
-    this.addElements(this.reviewParent, this.closeReviewButton)
+    this.addElements(this.reviewModal, reviewElements);
+    this.addElements(this.reviewModalWrapper, this.reviewModal);
+    this.addElements(this.reviewModal, this.closeReviewButton);
     this.toggleReview();
   }
 
@@ -43,7 +46,7 @@ class Review {
     const img = parent.querySelector('.avatar').cloneNode(true);
     const studentName = parent.querySelector('.student-name').cloneNode(true);
     const review = parent.querySelector('.review-text-content').cloneNode(true);
-    this.addElements(this.textContainer, review)
+    this.addElements(this.textContainer, review);
     return [img, studentName, this.textContainer];
   }
 
@@ -56,18 +59,18 @@ class Review {
   }
 
   toggleReview = () => {
-    this.modal.toggleModal();
-    this.reviewModalWrapper.classList.toggle('up-wrapper')
+    this.toggleModal();
+    this.reviewModalWrapper.classList.toggle('up-wrapper');
     document.body.classList.toggle('disscroll');
   }
 
   closeReview = () => {
-    [this.textContainer, this.reviewParent].forEach(element => this.removeElement(element));
+    [this.textContainer, this.reviewModal].forEach(element => this.removeElement(element));
   }
 
   showAllReviews = () => {
     this.reviewsBlock.classList.toggle('open-reviews');
-    this.buttonOpenReviews.classList.toggle('close');
+    this.openReviewsButton.classList.toggle('close');
   }
 
   removeElement = (element) => {
@@ -75,4 +78,8 @@ class Review {
   }
 }
 
-export const review = new Review(document.querySelector('.reviews-container'));
+export const review = new Review(document.querySelector('.reviews'));
+
+
+
+

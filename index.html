@@ -17,6 +17,7 @@
     <div class="container">
 
       <header class="header">
+
         <div class="logo lower">
           <a href="./index.html">
             <img src="./assets/image/png/logo.png" alt="logo" class="logo-img">
@@ -71,9 +72,11 @@
           <div class="line"></div>
           <div class="line"></div>
         </div>
+
       </header>
 
       <main class="main">
+
         <div class="main-title-wrapper">
           <h1 class="main-title">
            платформа обучения <span class="light-green">новых профессий</span> <span class="purple">it</span>
@@ -447,6 +450,16 @@
               </svg>
             </button>
           </section>
+
+          <div id="review-modal-wrapper" class="review-modal-wrapper">
+            <div id="review-modal" class="review-modal">
+              <button id="close-menu" class="close-menu lower">
+                <img class="" src="./assets/icon/close.svg" alt="">
+              </button>
+              <div id="text-container" class="review-modal-text-container"></div>
+            </div>
+          </div>
+          
         </sectio>
 
         <div class="separator-line"></div>
@@ -512,7 +525,7 @@
             <div class="subscribe-content">
               <span class="subscribe-text">Следите за специальными предложениями и новостями</span>
               <span class="input-email">
-                <input class="input" type="email" name="" id="emeil" placeholder="ваш e-meil">
+                <input class="input lower" type="email" name="" id="emeil" placeholder="ваш e-meil">
                 <svg class="title-button-text-arrow button-arrow-white lower" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M2.88388 1.61612C2.39573 1.12796 1.60427 1.12796 1.11612 1.61612C0.627961 2.10427 0.627961 2.89573 1.11612 3.38388L2.88388 1.61612ZM14.0208 15.7708C14.7112 15.7708 15.2708 15.2112 15.2708 14.5208L15.2708 3.27082C15.2708 2.58046 14.7112 2.02082 14.0208 2.02082C13.3305 2.02082 12.7708 2.58046 12.7708 3.27082V13.2708H2.77082C2.08046 13.2708 1.52082 13.8305 1.52082 14.5208C1.52082 15.2112 2.08046 15.7708 2.77082 15.7708L14.0208 15.7708ZM1.11612 3.38388L13.1369 15.4047L14.9047 13.6369L2.88388 1.61612L1.11612 3.38388Z" fill="#fff"/>
                 </svg>
@@ -531,17 +544,39 @@
       </footer>
 
     </div>
-    <div id="modal" class="modal"></div>
 
-    <div id="review-modal-wrapper" class="review-modal-wrapper">
-      <div id="review-modal" class="review-modal">
-        <button id="close-menu" class="close-menu lower">
-          <img class="" src="./assets/icon/close.svg" alt="">
-        </button>
-        <div id="text-container" class="review-modal-text-container"></div>
-      </div>
+    <div id="modal" class="modal"></div>
+    <div class="modal-form">
+      <section class="questions">
+
+        <div class="qustions-title-block">
+          <h2 class="questions-title">нужна помощь с подбором курса?</h2>
+          <span class="questions-hint">
+           Оставь свои контакты и в течении часа мы с вами свяжемся для подробной консультации
+          </span>
+        </div>
+
+        <div class="questions-form-block">
+          <form id="form" action="" class="form">
+            <input id="input-name" type="text" name="" class="input lower" placeholder="ваше имя" required>
+            <input id="input-mail" type="email" name="" class="input lower" placeholder="ваше e-mail" required>
+            <input id="input-qustion" type="text" name="" class="input lower" placeholder="ваш вопрос" required>
+            <div class="privacy">
+              Нажимая на кнопку “Отправить”, 
+              вы соглашаетесь на <a href="#" class="privacy-link lower">обработку персональных данных</a> и 
+              <a href="#" class="privacy-link lower">политику конфиденциальности</a>
+            </div>
+          </form>
+          <button class="btn-submit button hover-button lower" type="submit" form="form">
+            Отправить
+            <svg class="title-button-text-arrow button-arrow-white" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.88388 1.61612C2.39573 1.12796 1.60427 1.12796 1.11612 1.61612C0.627961 2.10427 0.627961 2.89573 1.11612 3.38388L2.88388 1.61612ZM14.0208 15.7708C14.7112 15.7708 15.2708 15.2112 15.2708 14.5208L15.2708 3.27082C15.2708 2.58046 14.7112 2.02082 14.0208 2.02082C13.3305 2.02082 12.7708 2.58046 12.7708 3.27082V13.2708H2.77082C2.08046 13.2708 1.52082 13.8305 1.52082 14.5208C1.52082 15.2112 2.08046 15.7708 2.77082 15.7708L14.0208 15.7708ZM1.11612 3.38388L13.1369 15.4047L14.9047 13.6369L2.88388 1.61612L1.11612 3.38388Z" fill="#fff"/>
+            </svg>
+          </button>
+        </div>
+      </section>
     </div>
-  
+
   <script type="module" src="./assets/js/index.js"></script>
 </body>
 </html>
