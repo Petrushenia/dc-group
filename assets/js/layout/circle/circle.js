@@ -1,11 +1,10 @@
 class MouseCircle {
-  constructor() {
+  constructor(width, height) {
     this.body = document.body;
-    this.circle = {
-      width: '26',
-      div: document.createElement('div')
-    };
-
+    this.circleWidth = width;
+    this.circleHeight = height;
+    this.className = 'mouse-circle';
+    this.div = document.createElement('div');
     this.circleLower = document.querySelectorAll('.lower');
     this.pageWidth = document.documentElement.scrollWidth;
     this.pageHeight = document.documentElement.scrollHeight;
@@ -15,11 +14,20 @@ class MouseCircle {
     if (window.matchMedia('(min-width: 900px)').matches) {
       this.initCircle();
     }
+
+    this.body.addEventListener('click', this.getPageSize);
+
+    this.body.addEventListener('mousemove', (e) => {
+      this.moveCircle(e);
+      this.checkPosition(e);
+    });
+
+    window.addEventListener('scroll', this.setPositionByScroll);
   }
 
   moveCircle = (e) => {
-    this.circle.div.style.top = `${this.getPageY(e) - (this.circle.width / 2)}px`;
-    this.circle.div.style.left = `${this.getPageX(e) - (this.circle.width / 2)}px`;
+    this.div.style.top = `${this.getPageY(e) - (this.circleWidth / 2)}px`;
+    this.div.style.left = `${this.getPageX(e) - (this.circleHeight / 2)}px`;
   }
 
   getPageY = (e) => {
@@ -28,34 +36,41 @@ class MouseCircle {
   }
 
   getPageX = (e) => { 
-    this.mousePosX = e.clientX
+    this.mousePosX = e.clientX;
     return e.pageX;
   }
 
-  setPositionByScroll = () => {
-    this.circle.div.style.top = `${(pageYOffset + this.mousePosY) - (this.circle.width / 2)}px`
-  }
-
-  checkPosition = (e) => {
-    if (this.mousePosX < this.circle.width) {
-      this.circle.div.style.left = '0px';
-    }else if (this.mousePosX > (this.pageWidth - this.circle.width)) {
-      this.circle.div.style.left = `${this.pageWidth - this.circle.width}px`
-    }else if (e.pageY > (this.pageHeight - this.circle.width)) {
-      this.circle.div.style.top = `${this.pageHeight - this.circle.width}px`
-    }
+  getPageSize = () => {
+    this.pageWidth = document.documentElement.scrollWidth;
+    this.pageHeight = document.documentElement.scrollHeight;
   }
 
   getBiggerCircle = () => {
-    this.circle.width = 26;
-    this.circle.div.style.width = `${this.circle.width}px`;
-    this.circle.div.style.height =`${this.circle.width}px`;
+    this.circleWidth = this.circleWidth * 2;
+    this.circleHeight = this.circleHeight * 2;
+    this.div.style.width = `${this.circleWidth}px`;
+    this.div.style.height =`${this.circleHeight}px`;
   }
 
   getLowerCircle = () => {
-    this.circle.width = this.circle.width / 2;
-    this.circle.div.style.width = `${this.circle.width}px`;
-    this.circle.div.style.height = `${this.circle.width}px`;
+    this.circleWidth = this.circleWidth / 2;
+    this.circleHeight = this.circleHeight / 2;
+    this.div.style.width = `${this.circleWidth}px`;
+    this.div.style.height = `${this.circleHeight}px`;
+  }
+
+  setPositionByScroll = () => {
+    this.div.style.top = `${(pageYOffset + this.mousePosY) - (this.circleWidth / 2)}px`;
+  }
+
+  checkPosition = (e) => {
+    if ( e.pageX < this.circleWidth ) {
+      this.div.style.left = '0px';
+    }else if ( e.pageX > (this.pageWidth - this.circleWidth) ) {
+      this.div.style.left = `${this.pageWidth - this.circleWidth}px`;
+    }else if ( e.pageY > (this.pageHeight - this.circleHeight) ) {
+      this.div.style.top = `${this.pageHeight - this.circleHeight}px`
+    }
   }
 
   enlargeCircle = () => {
@@ -71,22 +86,17 @@ class MouseCircle {
   }
 
   createCircle = () => {
-    this.circle.div.className = 'mouse-circle';
-    this.circle.div.style.width = `${this.circle.width}px`;
-    this.circle.div.style.height = `${this.circle.width}px`;
+    this.div.className = this.className;
+    this.div.style.width = `${this.circleWidth}px`;
+    this.div.style.height = `${this.circleHeight}px`;
   }
 
   initCircle = () => {
     this.createCircle();
-    this.body.appendChild(this.circle.div);
-    this.body.addEventListener('mousemove', (e) => {
-      this.moveCircle(e);
-      this.checkPosition(e);
-    })
-    window.addEventListener('scroll', this.setPositionByScroll)
     this.shrinkCircle();
     this.enlargeCircle();
+    this.body.appendChild(this.div);
   }
 }
 
-export const circle = new MouseCircle();
+export const circle = new MouseCircle(26, 26);

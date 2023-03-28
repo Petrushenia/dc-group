@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  position: relative;
   padding-top: 140px;
   padding-bottom: 80px;
 }

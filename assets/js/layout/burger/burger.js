@@ -3,23 +3,25 @@ import { mainModal } from "../mainModal/main.modal.js";
 class Burger {
   constructor(root) {
     this.root = root;
-    this.modal = mainModal;
     this.body = document.body;
     this.burger = this.root.querySelector('.burger-menu');
     this.navPanel = this.root.querySelector('.nav');
     this.navElements = this.navPanel.children;
 
+    Object.setPrototypeOf(this, mainModal);
+
     this.initBurger();
+
   }
 
   openMenu = () => {
-    this.modal.toggleModal();
+    this.toggleModal();
     this.body.classList.add('disscroll');
     this.navPanel.classList.add('open-panel');
   }
 
   closeMenuByModal = () => {
-    this.modal.modal.addEventListener('click', this.closeMenu)
+    this.modal.addEventListener('click', this.closeMenu);
   }
 
   openModalByClick = () => {
@@ -29,7 +31,7 @@ class Burger {
   }
 
   closeMenu = () => {
-    this.modal.modal.classList.remove('open-modal')
+    this.modal.classList.remove('open-modal')
     this.body.classList.remove('disscroll');
     this.navPanel.classList.remove('open-panel');
   }

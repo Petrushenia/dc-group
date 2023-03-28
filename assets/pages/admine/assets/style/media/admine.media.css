@@ -1,0 +1,38 @@
+@media screen and (max-width: 1217px) {
+  .curse-direction.admine {
+    padding-bottom: 130px;
+  }
+}
+
+@media screen and (max-width: 1037px) {
+  .dc-words.admine {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .learn-cases {
+    row-gap: 40px;
+  }
+
+  .case:nth-child(2) {
+    border-right: 1px solid var(--main-bgcolor-element);
+  }
+}
+
+@media screen and (max-width: 729px) {
+  .directions-item:not(:last-child) {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 673px) {
+  .learn-cases {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .case:nth-child(2) {
+    border-left: 1px solid var(--main-bgcolor-element);
+  }
+}
