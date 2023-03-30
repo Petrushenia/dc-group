@@ -99,4 +99,4 @@ class MouseCircle {
   }
 }
 
-export const circle = new MouseCircle(26, 26);
+export const circle = new MouseCircle(24, 24);
