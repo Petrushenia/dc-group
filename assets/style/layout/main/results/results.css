@@ -16,10 +16,32 @@
   padding: 30px 56px;
 }
 
+.results-card:nth-child(3)::before {
+  content: url('../../../../image/png/skrep.png');
+  display: block;
+  position: absolute;
+  width: 170px;
+  height: 132px;
+  bottom: -85px;
+  left: -67px;
+}
+
+.results-card:nth-child(8)::before {
+  content: url('../../../../image/png/skrep.png');
+  display: block;
+  position: absolute;
+  width: 170px;
+  height: 132px;
+  bottom: -61px;
+  right: -87px;
+  transform: scaleX(-1);
+}
+
 .results-card {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .card-number {
