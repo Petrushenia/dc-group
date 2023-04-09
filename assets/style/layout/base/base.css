@@ -17,6 +17,11 @@
   box-sizing: border-box;
 }
 
+.purple {
+  color: var(--main-bgcolor-element)
+}
+
+
 html {
   scroll-behavior: smooth;
 }

@@ -61,6 +61,12 @@
   }
 }
 
+@media screen and (max-width: 1029px) {
+  .results-cards {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
+}
+
 @media screen and (max-width: 768px) {
   .main-title {
     padding-top: 40px;
@@ -115,6 +121,19 @@
     text-align: center;
   }
 
+  .benefits {
+    padding: 75px 0;
+  }
+
+  .benefits-cards {
+    gap: 15px;
+  }
+
+  .benefit-card {
+    padding: 30px;
+    height: auto;
+  }
+  
   .e-commerce {
     display: flex;
     flex-direction: column;
@@ -182,6 +201,10 @@
     display: inline-block;
   }
 
+  .results-card:last-child {
+    display: none;
+  }
+
   .help {
     padding-top: 40px;
     padding-bottom: 30px;
@@ -229,6 +252,34 @@
   }
 }
 
+@media screen and (max-width: 695px) {
+  .rectangles {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 609px) {
+  .results-cards {
+    grid-template-columns: repeat(2, minmax(270px, 1fr));
+    gap: 10px;
+  }
+
+  .results-card:not(:first-child) {
+    padding: 20px;
+  }
+
+  .results-card:first-child > img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .results-cards {
+    grid-template-columns: repeat(1, minmax(280px, 1fr));
+  }
+}
+
 @media screen and (max-width: 490px) {
   .main-title-wrapper {
     background-image: none;
@@ -268,6 +319,10 @@
 
   .new-level-cards {
     grid-template-columns: minmax(200px, 1fr);
+  }
+
+  .benefits-cards {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   }
 
   .contact-links {

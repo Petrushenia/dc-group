@@ -48,10 +48,6 @@
   color: var(--neon-green)
 }
 
-.purple {
-  color: var(--main-bgcolor-element)
-}
-
 .title-button-text-arrow {
   width: min(16px, 10%);
 }
