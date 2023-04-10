@@ -1,6 +1,7 @@
 @import url('./main.title/main.pages.title.css');
 @import url('./direction/direction.css');
-@import url('./benefits/benefits.css');
 @import url('./questions/questions.pages.css');
 @import url('./../../../../../style/layout/main/work/work.css');
+@import url('./../../../../style/layout/main/benefits/benefits.css');
 @import url('./../../../../../style/layout/main/footer.contact/footer.contact.css');
+@import url('./../../../../style/layout/animation/animation.css');

@@ -30,27 +30,24 @@
   width: 115px;
   height: 115px;
   left: 16%;
-  background-color: #79357E;
+  background-color: #ADFF7B;
   z-index: 3;
-  animation: change-color-one 3s infinite ;
 }
 
 .rect-two {
   width: 119px;
   height: 119px;
   left: 33%;
-  background-color: #6F1577;
+  background-color: #6FF51D;
   z-index: 2;
-  animation: change-color-two 3s infinite
 }
 
 .rect-three {
   width: 123px;
   height: 123px;
-  background-color: #451649;
+  background-color: #358802;
   z-index: 1;
   left: 50%;
-  animation: change-color-three 3s infinite ;
 }
 
 .rect {

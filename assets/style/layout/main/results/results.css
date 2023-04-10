@@ -1,0 +1,52 @@
+.results-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 10px 30px;
+  align-items: center;
+}
+
+.results-card:first-child > img {
+  transform: scaleX(-1);
+}
+
+.results-card:not(:first-child, :last-child) {
+  height: 175px;
+  position: relative;
+  border: 1px solid var(--neon-green);
+  padding: 30px 56px;
+}
+
+.results-card:nth-child(3)::before {
+  content: url('../../../../image/png/skrep.png');
+  display: block;
+  position: absolute;
+  width: 170px;
+  height: 132px;
+  bottom: -85px;
+  left: -67px;
+}
+
+.results-card:nth-child(8)::before {
+  content: url('../../../../image/png/skrep.png');
+  display: block;
+  position: absolute;
+  width: 170px;
+  height: 132px;
+  bottom: -61px;
+  right: -87px;
+  transform: scaleX(-1);
+}
+
+.results-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card-number {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: var(--neon-green);
+}

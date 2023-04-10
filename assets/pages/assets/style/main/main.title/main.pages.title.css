@@ -17,7 +17,7 @@
   height: 58px;
   top: 0;
   right: 0;
-  background: rgba(111, 245, 29, 0.7);
+  background: #EB00FF;
   filter: blur(75px);
 }
 
@@ -26,6 +26,6 @@
   height: 58px;
   right: calc(100% / 1178 * 137);
   top: 14px;
-  background: rgba(235, 0, 255, 0.5);
+  background: #EB00FF;
   filter: blur(75px);
 }
