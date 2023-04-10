@@ -11,12 +11,7 @@
 
 .about-us-title::before,
 .about-us-title::after {
-  content: '';
-  display: inline-block;
-  background-image: url('./../../../image/png/star.png');
-  width: 60px;
-  height: 60px;
-  flex-shrink: 0;
+  content: url('../../../../image/png/star.png');
 }
 
 .about-us > .separator-line {

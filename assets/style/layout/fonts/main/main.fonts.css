@@ -55,6 +55,7 @@
 .work-title,
 .results-title,
 .reviews-title,
+.teachers-title,
 .questions-title {
   font-family: var(--dop-fonts);
   font-weight: var(--font-weight700);
@@ -112,7 +113,7 @@
 }
 
 .benefits-card-title {
-  font-weight: var(--font-weight500);
+  font-weight: var(--font-weight700);
   font-size: var(--font-size16);
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -198,6 +199,30 @@
   line-height: 120%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+}
+
+.resume-tittle {
+  font-family: var(--dop-fonts);
+  font-weight: var(--font-weight700);
+  font-size: var(--font-size16);
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.teacher-name {
+  font-family: var(--dop-fonts);
+  font-weight: var(--font-weight700);
+  font-size: var(--font-size30);
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.skills-list {
+  font-family: 'Verdana';
+  font-size: var(--font-size16);
+  line-height: 120%;
 }
 
 .consult {

@@ -1,0 +1,79 @@
+.teacher-wrapper {
+  display: grid;
+  grid-template: repeat(10, auto) / repeat(auto-fit, minmax(350px, 1fr));
+  padding: 35px 0 80px 0;
+  column-gap: 140px;
+}
+
+.teacher-avatar {
+  grid-area: 1/1/4/2;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.teacher-avatar > img {
+  width: auto !important;
+}
+
+.teachers-title {
+  max-width: 420px;
+}
+
+.resume-tittle {
+  grid-area: 1/2/2/3;
+}
+
+.teacher-name {
+  grid-area: 2/2/3/3;
+  padding-top: 15px;
+  padding-bottom: 50px;
+}
+
+.teacher-skills {
+  grid-area: 3/2/4/3;
+}
+
+.skills-list {
+  padding-left: 15px;
+}
+
+.skills-item:not(:last-child) {
+  padding-bottom: 15px;
+}
+
+.separator-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.separator-wrapper > .separator-line {
+  max-width: 1074px;
+  height: 1px;
+  background-color: var(--main-bgcolor-element);
+  order: 2;
+}
+
+.star {
+  background-image: url('../../../../image/png/star.png');
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.star:first-child {
+  order: 1;
+}
+
+.star:last-child {
+  order: 3;
+}
+
+.teachers > .separator-line::before {
+  left: -70px;
+}
+
+.teachers>.separator-line::after {
+  right: -70px;
+}
