@@ -98,7 +98,7 @@
     width: 170px;
     height: 132px;
     bottom: -80px;
-    right: -35px;
+    right: 0;
   }
 
   .results-card:last-child {
@@ -116,12 +116,6 @@
     top: 194px;
     left: calc(100% - 287px);
   }
-
-  .big-word,
-  .big-word-layer {
-    font-size: 190px;
-  }
-
 
   .separator-line {
     margin: 30px auto;
@@ -232,7 +226,6 @@
   }
 
   .word {
-    height: 28px;
     border: 2px solid #EB00FF;
   }
 
@@ -333,7 +326,7 @@
 
   .results-card:nth-child(2)::before {
     top: -85px;
-    left: -46px;
+    left: 0px;
     transform: scaleY(-1);
   }
 

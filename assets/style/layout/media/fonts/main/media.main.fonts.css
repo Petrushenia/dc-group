@@ -23,6 +23,11 @@
   .questions-title {
     font-size: var(--font-size30);
   }
+
+  .big-word,
+  .big-word-layer {
+    font-size: 150px;
+  }
 }
 
 @media screen and (max-width: 490px) {
@@ -32,6 +37,10 @@
 
   .main-title-text {
     font-size: 20px;
+  }
+
+  .dc-words {
+    display: none;
   }
 }
 

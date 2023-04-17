@@ -13,6 +13,6 @@
 @import url('./../../../assets/style/fonts/pages.fonts.css');
 @import url('./../../../assets/style/main/pages.main.css');
 @import url('./../../../assets/style/media/pages.media.css');
-@import url('./../../../assets/style/animation/animation.css');
 @import url('./main/curse.css');
+@import url('./main/modules.css');
 @import url('./media/manager.media.css');
