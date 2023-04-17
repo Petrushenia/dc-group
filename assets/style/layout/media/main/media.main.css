@@ -226,6 +226,8 @@
   }
 
   .word {
+    width: 65px;
+    height: 28px;
     border: 2px solid #EB00FF;
   }
 

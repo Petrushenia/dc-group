@@ -19,6 +19,6 @@
   }
 
   .grid-item-two {
-    border-right: 1px solid var(--main-bgcolor-element);
+    border-right: 1px solid var(--neon-green);
   }
 }

@@ -14,8 +14,8 @@
 @import url('./../../../assets/style/fonts/pages.fonts.css');
 @import url('./../../../assets/style/main/pages.main.css');
 @import url('./../../../assets/style/media/pages.media.css');
-@import url('./../../../assets/style/animation/animation.css');
+@import url('./../../../assets/style/main/module/pages.module.css');
 @import url('./fonts/admine.fonts.css');
-@import url('./adnine.curse/admine.curse.css');
-@import url('./adnine.curse/learn.css');
+@import url('./main/admin.main.css');
 @import url('./media/admine.media.css');
+@import url('./../../../assets/style/media/module/media.modules.css');

@@ -1,0 +1,4 @@
+.modules-card {
+  border-bottom: 1px solid var(--main-bgcolor-element);
+  padding-bottom: 15px;
+}
