@@ -227,7 +227,6 @@
 
   .word {
     width: 65px;
-    height: 28px;
     border: 2px solid #EB00FF;
   }
 
@@ -374,10 +373,6 @@
 
   .curses {
     text-align: center;
-  }
-
-  .word {
-    width: 60px;
   }
 
   .show-reviews-button {
