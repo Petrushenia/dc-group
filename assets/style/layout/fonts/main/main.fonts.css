@@ -56,7 +56,8 @@
 .results-title,
 .reviews-title,
 .teachers-title,
-.questions-title {
+.questions-title,
+.module-title {
   font-family: var(--dop-fonts);
   font-weight: var(--font-weight700);
   font-size: var(--font-size50);

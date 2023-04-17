@@ -1,0 +1,68 @@
+.modules-content {
+  padding-top: 60px;
+}
+
+.modules-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(54, 54, 54, 0.6);
+  border: 1px solid var(--neon-green);
+  padding: 10px 7px;
+}
+
+.content-title {
+  display: flex;
+  justify-content: inherit;
+  position: relative;
+  flex-grow: 1;
+}
+
+.modules-header-icon {
+  margin-left: auto;
+}
+
+.text-title {
+  position: absolute;
+}
+
+.icon-line {
+  width: 40px;
+  border-bottom: 1px solid var(--color-white);
+}
+
+.modules-header-icon {
+  display: flex;
+}
+
+.icon-squer {
+  width: 37px;
+  height: 33px;
+  border: 1px solid var(--color-white);
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.icon-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  padding: 5px 9px;
+}
+
+.modules-body {
+  display: grid;
+  grid-template:repeat(6, 1fr) / repeat(2, minmax(250px, 1fr));
+  grid-auto-flow: column;
+  gap: 14px 110px;
+  padding: 45px 65px 25px 65px;
+  border-right: 1px solid var(--neon-green);
+  border-left: 1px solid var(--neon-green);
+  border-bottom: 1px solid var(--neon-green);
+}
+
+.modules-card {
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--main-bgcolor-element);
+}

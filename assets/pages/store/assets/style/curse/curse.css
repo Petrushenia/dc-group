@@ -5,6 +5,7 @@
 
 .curse-pages {
   padding-top: 50px;
+  padding-bottom: 140px;
 }
 
 .curse-info {
@@ -26,22 +27,21 @@
 
 .grid-item-one {
   grid-area: 1/1/2/2;
-  width: 97%;
   height: 113px;
-  background-color: var(--main-bgcolor-element);
+  background-color: var(--neon-green);
 }
 
 
 .grid-item-two {
   grid-area: 2/1/3/2;
-  border-left: 1px solid var(--main-bgcolor-element);
-  border-bottom: 1px solid var(--main-bgcolor-element);
-  border-top: 1px solid var(--main-bgcolor-element);
+  border-left: 1px solid var(--neon-green);
+  border-bottom: 1px solid var(--neon-green);
+  border-top: 1px solid var(--neon-green);
 }
 
 .grid-item-three {
   grid-area: 1/2/3/3;
-  border: 1px solid var(--main-bgcolor-element);
+  border: 1px solid var(--neon-green);
 }
 
 .curse-info-title.purple {

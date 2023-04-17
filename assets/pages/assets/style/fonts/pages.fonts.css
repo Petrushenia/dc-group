@@ -21,7 +21,6 @@
   line-height: 120%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-bgcolor-element);
 }
 
 .curse-info-title {
@@ -68,4 +67,25 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-bgcolor-element);
+}
+
+.content-title {
+  font-family: var(--dop-fonts);
+  font-weight: var(--font-weight700);
+  font-size: var(--font-size30);
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.modules-card-title {
+  font-family: var(--dop-fonts);
+  font-weight: var(--font-weight700);
+  font-size: var(--font-size20);
+  line-height: 120%;
+}
+
+.modules-card-text {
+  font-family: var(--main-fonts);
+  font-size: var(--font-size16);
+  line-height: 120%;
 }

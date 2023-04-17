@@ -1,0 +1,25 @@
+@media screen and (max-width: 790px) {
+  .modules-body {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-auto-flow: unset;
+    padding: 22px 22px 12px 22px;
+  }
+
+  .modules-card-title {
+    padding-bottom: 7px;
+  }
+  
+  .modules-card-title::before {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .modules-header-icon {
+    display: none;
+  }
+
+  .text-title {
+    position: relative;
+  }
+}
