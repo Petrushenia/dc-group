@@ -37,9 +37,13 @@
 
 .benefit-card-image {
   grid-area: 1/3/4/4;
-  background-image: url('./../../../../../image/png/curses-bg.png');
+  background-image: url('./../../../../../../image/png/curses-bg.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   padding: 0;
+}
+
+.curse-main-title.manager {
+  padding-top: 60px;
 }
