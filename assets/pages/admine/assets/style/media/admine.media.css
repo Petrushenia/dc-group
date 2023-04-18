@@ -36,3 +36,9 @@
     border-left: 1px solid var(--main-bgcolor-element);
   }
 }
+
+@media screen and (max-width: 480px) {
+  .directions {
+    width: 100%;
+  }
+}

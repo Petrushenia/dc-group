@@ -45,13 +45,18 @@
 }
 
 @media screen and (max-width: 480px) {
-  .new-level-title,
-  .dc-group-title,
-  .about-us-title,
-  .curses-title,
-  .works-title,
-  .reviews-title,
-  .questions-title {
-    font-size: 18px;
+  h2 {
+    font-size: 3.5em !important;
+  }
+
+  .word {
+    width: 40px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .resume-tittle {
+    grid-area: 1/2/2/3;
   }
 }
