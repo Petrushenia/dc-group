@@ -1,0 +1,19 @@
+.btn-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 100px;
+  bottom: 40px;
+  border-radius: 50%;
+  background-color: var(--main-bgcolor-element);
+  transition: .4s linear;
+  transform: translateY(0);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.btn-hide {
+  opacity: 0;
+  transform: translateY(100px);
+}
