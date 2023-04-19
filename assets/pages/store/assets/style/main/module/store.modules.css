@@ -8,6 +8,10 @@
   border-bottom: 1px solid var(--main-bgcolor-element);
 }
 
+.modules-body {
+  grid-template: repeat(6, min-content) / repeat(2, minmax(250px, 1fr));
+}
+
 .modules-card-title {
   display: flex;
   align-items: center;

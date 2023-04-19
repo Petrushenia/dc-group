@@ -14,5 +14,6 @@
 @import url('./../../../assets/style/main/pages.main.css');
 @import url('./../../../assets/style/main/module/pages.module.css');
 @import url('./main/store.main.css');
+@import url('./../../../../style/layout/main/btn-up/btn.css');
 @import url('./../../../assets/style/media/pages.media.css');
 @import url('./../../../assets/style/media/module/media.modules.css');
