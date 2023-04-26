@@ -51,6 +51,7 @@ p {
 .wrapper {
   position: relative;
   background: var(--bgcolor) url('./../../../image/png/bg.png') no-repeat 0 calc(100% / 5745.53 + 2845px);
+  z-index: 1;
 }
 
 .wrapper-shum {
