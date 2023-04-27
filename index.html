@@ -85,7 +85,7 @@
           <div class="main-title-text">
             с нами вы сможете открыть интернет-магазин
           </div>
-          <button class="main-title-button button lower">
+          <button class="main-title-button button lower contact-button-js">
             получить консультацию
             <svg class="button-arrow-white" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M2.88388 1.61612C2.39573 1.12796 1.60427 1.12796 1.11612 1.61612C0.627961 2.10427 0.627961 2.89573 1.11612 3.38388L2.88388 1.61612ZM14.0208 15.7708C14.7112 15.7708 15.2708 15.2112 15.2708 14.5208L15.2708 3.27082C15.2708 2.58046 14.7112 2.02082 14.0208 2.02082C13.3305 2.02082 12.7708 2.58046 12.7708 3.27082V13.2708H2.77082C2.08046 13.2708 1.52082 13.8305 1.52082 14.5208C1.52082 15.2112 2.08046 15.7708 2.77082 15.7708L14.0208 15.7708ZM1.11612 3.38388L13.1369 15.4047L14.9047 13.6369L2.88388 1.61612L1.11612 3.38388Z" fill="white"></path>
@@ -759,18 +759,13 @@
       <div class="modal-form-container">
         <section class="questions questions-modal">
 
-          <button id="close-menu lower" class="close-menu lower">
-            <img class="" src="./assets/icon/close.svg" alt="">
-          </button>
-
-          <div class="qustions-title-block">
-            <h2 class="questions-title">нужна помощь с подбором курса?</h2>
-            <span class="questions-hint">
-              Оставь свои контакты и в течении часа мы с вами свяжемся для подробной консультации
-            </span>
-          </div>
-
-          <div class="questions-form-block">
+          <div class="modal-form-content">
+            <div class="questions-title-block">
+              <h2 class="questions-title">нужна помощь с подбором курса?</h2>
+              <span class="questions-hint">
+                Оставь свои контакты и в течении часа мы с вами свяжемся для подробной консультации
+              </span>
+            </div>
             <form id="form-modal" action="" class="form">
               <input id="input-name-modal" type="text" name="" class="input lower" placeholder="ваше имя" required>
               <input id="input-mail-modal" type="email" name="" class="input lower" placeholder="ваше e-mail" required>
@@ -780,15 +775,20 @@
                 вы соглашаетесь на <a href="#" class="privacy-link lower">обработку персональных данных</a> и 
                 <a href="#" class="privacy-link lower">политику конфиденциальности</a>
               </div>
-            </form>
-            <button class="btn-submit button hover-button lower" type="submit" form="form">
+              <button class="btn-submit button hover-button lower" type="submit" form="form-modal">
               Отправить
               <svg class="title-button-text-arrow button-arrow-white" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2.88388 1.61612C2.39573 1.12796 1.60427 1.12796 1.11612 1.61612C0.627961 2.10427 0.627961 2.89573 1.11612 3.38388L2.88388 1.61612ZM14.0208 15.7708C14.7112 15.7708 15.2708 15.2112 15.2708 14.5208L15.2708 3.27082C15.2708 2.58046 14.7112 2.02082 14.0208 2.02082C13.3305 2.02082 12.7708 2.58046 12.7708 3.27082V13.2708H2.77082C2.08046 13.2708 1.52082 13.8305 1.52082 14.5208C1.52082 15.2112 2.08046 15.7708 2.77082 15.7708L14.0208 15.7708ZM1.11612 3.38388L13.1369 15.4047L14.9047 13.6369L2.88388 1.61612L1.11612 3.38388Z" fill="#fff"/>
               </svg>
             </button>
+            </form>
+
           </div>
-      </section>
+
+          <button class="close-menu lower">
+            <img class="" src="./assets/icon/close.svg" alt="">
+          </button>
+        </section>
       </div>
     </div>
   <script type="module" src="./assets/js/index.js"></script>
