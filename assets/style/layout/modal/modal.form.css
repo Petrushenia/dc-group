@@ -1,21 +1,39 @@
 .questions.questions-modal {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  width: 90vw;
   max-width: 780px;
+  min-height: 443px;
   background-color: var(--bg-review-color);
-  padding: 20px 0;
+  padding: 20px 0 20px 45px;
 }
 
-.questions.questions-modal > :nth-child(2) {
-  flex-basis: 340px;
+.modal-form-content {
+  display: grid;
+  grid-template-columns: 382px 1fr;
+  padding-top: 20px;
+}
+
+.modal-form-content > .questions-title-block {
   border-right: 1px solid var(--color-separator);
-  padding: 40px 30px 20px 45px;
-  box-sizing: content-box;
 }
 
-.questions.questions-modal > :nth-child(3) {
-  flex-basis: 280px;
-  margin: 40px 30px 20px 45px;
-  box-sizing: content-box;
+.modal-form-content > .questions-title-block > .questions-title {
+  text-align: left !important;
+}
+
+.modal-form-content > .form {
+  padding-left: 30px;
+}
+
+.modal-form-content > .questions-title-block,
+.modal-form-content > .form {
+  padding-top: 40px;
+}
+
+.questions-title-block > .questions-hint {
+  display: block;
+  max-width: 338px;
 }
 
 .modal-form {
@@ -39,16 +57,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: var(--bg-modal);
 }
 
 .questions.questions-modal > .close-menu {
+  grid-area: 1/2/2/4;
   display: block;
-  position: absolute;
-  right: 20px;
-  top: 20px;
+  position: unset;
   border: none;
   background: transparent;
   cursor: pointer;

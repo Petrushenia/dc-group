@@ -22,7 +22,9 @@ class RequestModal {
 
   showFormModal = () => {
     this.root.classList.toggle('modal-form-visible');
+    document.body.classList.toggle('disscroll');
   }
+
 }
 
 export const formModal = new RequestModal(document.querySelector('#modal-form'))
