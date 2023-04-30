@@ -7,7 +7,6 @@ class Burger {
     this.burger = this.root.querySelector('.burger-menu');
     this.nav = this.root.querySelector('.nav');
     this.navItems = [this.root.querySelector('.nav-items'), this.root.querySelector('.nav-contacts')];
-    console.log(...this.navItems[0].children)
     Object.setPrototypeOf(this, mainModal);
 
     this.initBurger();

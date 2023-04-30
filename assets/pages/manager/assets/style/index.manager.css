@@ -17,4 +17,6 @@
 @import url('./main/manager.main.css');
 @import url('./../../../assets/style/media/module/media.modules.css');
 @import url('./../../../../style/layout/main/btn-up/btn.css');
+@import url('./../../../../style/layout/modal/modal.form.css');
+@import url('./../../../../style/layout/media/modal/form.modal/form.modal.css');
 @import url('./media/manager.media.css');
