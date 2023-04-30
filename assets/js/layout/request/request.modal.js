@@ -28,11 +28,6 @@ class RequestModal {
     this.root.classList.remove('modal-form-visible');
     document.body.classList.remove('disscroll');
   }
-
-  
-
-  
-
 }
 
 export const formModal = new RequestModal(document.querySelector('#modal-form'))
